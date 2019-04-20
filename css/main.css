@@ -232,7 +232,6 @@ margin-bottom: 5%;
 
 .workspace-main{
     background-color: #f5f3f5;
-      height: auto;
   width: 90%;
   padding: 60px 0px 0px 0px;
 
@@ -242,7 +241,7 @@ margin-bottom: 5%;
 .workspace-main .row{
   float:left;
   width:43%;
-  margin: 25px 60px 250px 0px
+  margin: 25px 60px 60px 0px
 }
 
 .workspace-main input{
