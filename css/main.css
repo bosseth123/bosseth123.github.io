@@ -301,7 +301,7 @@ margin-bottom: 5%;
   .sec-1 {
   min-height: 800px;
   width: 100%;
-  background: url("../img/header9.jpg") no-repeat 0 -240px;
+  background: url("../img/team3.jpg") no-repeat 0 -0px;
   text-align: center;
   color:#ffffff;
   background-size: cover;
@@ -311,6 +311,10 @@ margin-bottom: 5%;
 
   }
 
+.text{
+  width: 70%;
+  margin-left:190px; font-size: 18px
+}
 
 /*----------------------MEDIA QUERIES------------------------*/
 /*---------------------MEDIA QUERIES----------------------------*/
@@ -332,6 +336,13 @@ ul, li{
 
 
 @media(max-width:780px){
+
+
+.big-img{
+  display: none;
+}
+
+
 
   input{
       height: 40px;
@@ -503,6 +514,12 @@ margin-bottom: 10%;
 
 
 @media(max-width:500px){
+
+  .text{
+    width: 100%;
+    margin-left:0px; font-size: 18px
+  }
+
 
   .gif{
     width: 100%;
