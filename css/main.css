@@ -146,7 +146,6 @@ header.conntainer{
 }
 
 header{background-color: #4CAF50;
-   background-blend-mode: darken;
   color: #ffffff;
   padding-top: 0px;
   min-height:60px;
@@ -187,9 +186,9 @@ header .highlight, header .current a{ color: #3B5323;
 min-height: auto;
 width: 100%;
 background: url("../img/benjamin-davies-260884-unsplash.jpg");
-
+background-color: #3B5323;
+ background-blend-mode: screen;
 /*background-color: #3B5323;*/
-background-blend-mode: hard-light;
 /*background-color:
     background: #112B3D;
     background: -moz-radial-gradient(50%, circle cover, #1b566b 1%, #112B3D 60%);
@@ -202,7 +201,6 @@ background-size: cover;
 background-repeat: no-repeat;
 background-attachment: local;
 text-shadow: 0 0 15px rgba(0,0,0,0.5);
-margin-bottom: 5%;
 }
 
 .section-1 .row{
@@ -447,7 +445,7 @@ ul, li{
 
   }
   .section-5 .row{
-    width:100%;
+    width:95%;
     float: none;margin-bottom: 20%; padding: 10px;
     font-family: sans-serif;
 
@@ -557,21 +555,6 @@ margin-bottom: 10%;
 }
 
 
-  .section-1 {
-  min-height: auto;
-  width: auto;
-  background: url("../img/james-baltz-1387439-unsplash.jpg") no-repeat;
-  background-color: #3B5323;
-
-  text-align: center;
-  color:#ffffff;
-  background-attachment: local;
-  text-shadow: 0 0 15px rgba(0,0,0,0.5);
-  margin-bottom: 0%;
-
-  }
-
-
 
 
 
@@ -661,7 +644,7 @@ body {
   .section-1 {
   min-height: auto;
   width: auto;
-  background: url("../img/james-baltz-1387439-unsplash.jpg") no-repeat;
+  background: url("../img/benjamin-davies-260884-unsplash.jpg");
   background-color: #3B5323;
 
   text-align: center;
@@ -692,7 +675,7 @@ body {
 
 
 padding-top:
-  100px;
+  70px;
 
 
 
