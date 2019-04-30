@@ -13,7 +13,7 @@
   top: 0;
   left: 0;
   background-color: #3B5323;
-
+opacity: 0.95;
   overflow-x: hidden;
   transition: 1.0s;
   padding-top: 60px;
@@ -60,7 +60,7 @@
 }
 
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
     .dropdown{
       display: inline
     }
