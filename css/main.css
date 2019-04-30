@@ -186,8 +186,7 @@ header .highlight, header .current a{ color: #3B5323;
 min-height: auto;
 width: 100%;
 background: url("../img/benjamin-davies-260884-unsplash.jpg");
-background-color: #3B5323;
- background-blend-mode: screen;
+
 /*background-color: #3B5323;*/
 /*background-color:
     background: #112B3D;
