@@ -4,8 +4,8 @@
 
   body{
 
-  font-size: 15px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: auto;
   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif,  Verdana,sans-serif;;
   padding: 0px; margin: 0px;
   text-align: justify;
@@ -50,6 +50,25 @@ select {
   width:50%;
 }
 
+.pad{
+  padding: 0px 10%;
+}
+
+.quote-slide{
+  min-height: 140px;
+}
+
+.rar{
+  float: left;
+  width:12.5%;
+  border: 1px solid #fff;
+  background-color:#3B5323;
+  color: #fff;
+  height: 120px;
+  padding: 1%
+
+}
+
 
  .button{
        box-shadow: 0 5px 5px -2px rgba(31,31,31,.4);
@@ -78,7 +97,9 @@ font-size: 22px;
 
   }
 
-
+.row-1{
+  width: 35%;
+}
 /*global*/
 .container{width: 80%;
   margin: auto;
@@ -99,8 +120,7 @@ font-size: 22px;
   }
 
   p{
-    line-height: 25px;
-    font-size: 1rem;
+    font-size: 20px;
     margin-top: 0px;
     color: #666;
     font-size: 16px;
@@ -145,12 +165,12 @@ header.conntainer{
   width:100%
 }
 
-header{background-color: #4CAF50;
+header{background-color:#3B5323 ;
   color: #ffffff;
   padding-top: 0px;
   min-height:60px;
   box-shadow: 0 4px 18px 0 rgba(0,0,0,.12), 0 7px 10px -5px rgba(0,0,0,.15);
-
+border-bottom:1px solid #4CAF50;
   width: 100%;
   position: fixed;
 }
@@ -203,8 +223,8 @@ text-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 .section-1 .row{
-  width:40%;
-  float: right;margin: 2%; padding: 3px; margin-top: 10%
+  width:46%;
+  float: left;margin: 2%; padding: 3px; margin-top: 10%
 
 
 }
@@ -366,9 +386,25 @@ ul, li{
 
 
 @media(max-width:780px){
+  .pad{
+    padding: auto
+  }
+  .rar{
+    text-align:center;
+    float: none;
+    width:60%;
+    border: 1px solid #fff;
+    background-color:#3B5323;
+    color: #fff;
+    height: auto;
+    padding: 5%;
+    margin: 0px 20%
 
+  }
 
-
+  .row-1{
+    width: auto;
+  }
 .big-img{
   display: none;
 }
@@ -421,7 +457,7 @@ ul, li{
              background-color:#3B5323;
              border-color:#3B5323 ;
 
-      padding: 0% 10%;}
+      padding: 2% 10%;}
 
   .button:hover {
       color: #fff;
@@ -439,7 +475,7 @@ ul, li{
     }
 
   .section-1 .row{
-    width:100%;
+    width:auto;
     float: left; margin: 2%; padding: 3px; margin-top: 10%
 
 
@@ -563,6 +599,10 @@ margin-bottom: 10%;
 
 @media(max-width:500px){
 
+  .quote-slide{
+    min-height: 260px;
+  }
+
 
   .ecosystem{
     width:90%;
@@ -611,14 +651,13 @@ font-family: inherit;}
 
 
 body {
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 1.5em;
+  font-size: 20px;
+
   font-weight: 400;
   }
 
   p{
-      font-size: 16px;
+      font-size: 18px;
   }
 
   .container{
@@ -645,7 +684,6 @@ body {
   min-height: auto;
   width: auto;
   background: url("../img/benjamin-davies-260884-unsplash.jpg");
-  background-color: #3B5323;
 
   text-align: center;
   color:#ffffff;
@@ -708,8 +746,6 @@ padding-top:
   /*---------------------contact----------------------------*/
   /*-------------------contact-----------------------------*/
   /*------------------------------------------------------*/
-
-
 
 
 

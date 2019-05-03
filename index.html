@@ -15,35 +15,141 @@
 <link rel="stylesheet" href="css/dropdown.css">
 <link rel="stylesheet" href="css/main.css">
 
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
 
-/* The only rule that matters */
-#video-background {
-/*  making the video fullscreen  */
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid #3B5323;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #4CAF50;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th	{
+    background-color: #4CAF50;
+    color: white;
 }
 
 
+/*table*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 200%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 
 
 </style>
-
-
-
-
-
 </head>
 
 <body>
+
 <!--
       <div class="pre-loader">
         <div class="sk-fading-circle">
@@ -86,7 +192,7 @@
 <!-- header header header header header header header header header header header headerheader header header header -->
 
 
-<header>
+<header style="z-index:999">
 
 
 <div class="container" >
@@ -169,15 +275,10 @@
 
 
 
-<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
 <!--  Content  -->
 
 
-<!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
-<video autoplay loop id="video-background" muted plays-inline>
-  <source src="https://youtu.be/Btn5YHuSp-Y" type="video/mp4">
-</video>
 
 <!-- main main main main main main main main main main main main main main main main main main main main main main-->
 <!-- main main main main main main main main main main main main main main main main main main main main main main-->
@@ -187,54 +288,124 @@
 <!-- main main main main main main main main main main main main main main main main main main main main main main-->
 <!-- main main main main main main main main main main main main main main main main main main main main main main-->
 
-<main>
+<main style="z-index:-1">
 
 
 <section class="section-1">
 <div class="container">
-  <div class="row">
+  <div class="row" >
+
+
+
+      <center><h1 style="color:#fff">The New Paradigm for Agricultural Supply and Trading</h1>
+      <p style="color:#fff">
+
+      </p>
+
+
+        <div class="quote-slide  fade">
+          End to end agric-tech platform enabling farmers to sell to buyer globally
+          Enabling global supply chain for farmers by connecting all the supply chain actors on a single platform to trade.</div>
+        <div class="quote-slide  fade">
+          Seamless communication channel among supply chain players
+          Better management of inventory based on historical data
+          Increased efficiency with reduction in waste and better transportation practices
+          Get expert insights with their agri input historic data from the network    </div>
+
+
+     <br>
+
+
+      <div >
+
+      <center>
+
+
+
+
+      <i class="fab fa-facebook-f"></i>
+
+      <i class="fab fa-twitter"></i>
+       <i class="fab fa-google"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin-in"></i>
+
+
+
+      </center>
+
+
+      </div><br>
+      <button class="button" style="background-color:#4CAF50; margin: 10px 0;  border-color:#4CAF50; "type="button" name="Learn More" >Token Sale</button>
+      <button class="button" style="background-color:#4CAF50;   margin: 10px 0px;border-color:#4CAF50; "type="button" name="Learn More" >Watch Video</button>
+
+
+      </center>
+
   </div>
 
 <div class="row">
+<center><h1 style="color:#fff">Blog</h1></center>
+      <div class="slideshow-container">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 
-  <center><h1 style="color:#fff">The New Paradigm of International Business</h1>
-  <p style="color:#fff">End to end agric-tech platform enabling farmers to sell to buyer globally
-  Enabling global supply chain for farmers by connecting all the supply chain actors on a single platform to trade.
-  Seamless communication channel among supply chain players
-  Better management of inventory based on historical data
-  Increased efficiency with reduction in waste and better transportation practices
-  Get expert insights with their agri input historic data from the network
-  </p> <br>
+      <div class="mySlides fade">
+        <img src="img/555.jpg" style="width:80%">
+      </center> <a href="#"> <p style="color:#fff">Manageing Transformation the Right Way</p></a> </center>
+      </div>
 
+      <div class="mySlides fade">
+     <center>   <img src="img/666.png" style="width:80%"> </center>
+    </center> <a href="#"> <p style="color:#fff">Manageing Transformation the Right Way</p></a> </center>
+      </div>
 
-  <div >
-
-  <center>
-
-
-
-
-
-
-
-  <i class="fab fa-facebook-f"></i>
-
-  <i class="fab fa-twitter"></i>
-   <i class="fab fa-google"></i>
-  <i class="fab fa-instagram"></i>
-  <i class="fab fa-linkedin-in"></i>
+      <div class="mySlides fade" >
+        <img src="img/777.jpg" style="width:80%">
+      </center> <a href="#"> <p style="color:#fff">Manageing Transformation the Right Way</p></a> </center>
+      </div>
 
 
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-  </center>
+      </div>
+      <br>
 
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
 
-  </div><br>
-  <button class="button" style="background-color:#4CAF50; margin: 10px 0;  border-color:#4CAF50; "type="button" name="Learn More" >Token Sale</button>
-  <button class="button" style="background-color:#4CAF50;   margin: 10px 0px;border-color:#4CAF50; "type="button" name="Learn More" >Watch Video</button>
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
 
-  </center>
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+
 </div>
 
 </div>
@@ -250,7 +421,7 @@
 
 <center>
 <div class="container">
-<h1>What Is agrichainx</h1>
+<h1>What Is agrichainx</h1><br>
 <p>Agrichainx is a blockchain and internet of things ecosystem that simplifies and streamlines agricultural commodities trade, supply chain, value chain, food security, international collaboration, contracting, logistics, financing and payments for all stakeholder. </p>
 </div> </center>
 </div>
@@ -267,8 +438,34 @@
 </h1>
 
 </div> </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
+
 <br><br>
+</section>
+
+
+
+
+
+
+
+<section>
+
+
+
 </section>
 
 <section class="section-3">
@@ -277,8 +474,8 @@
 <div class="row">
 <img src="img/11 (1).png" style="width:45%"alt="">
 
-<h4>AgricTrade
-</h4>
+<h3>AgricTrade
+</h3>
 
 <p>AgricTrade is an online marketplace connecting agri trade networks from farmers to buyers. It create a direct business tie-ups between farmers, transporters, cold storage providers, retailers, and even consumers.
 
@@ -289,8 +486,8 @@
 <img src="img/11 (2).png" style="width:45%"alt="">
 
 
-<h4>AgricStorage
-</h4>
+<h3>AgricStorage
+</h3>
 
 
 <p>AgricStorage is Agric’s network of cold storage facilities across Nigeria and Africa partnered with local farmers and retailers for preserving their crop stocks.</p>
@@ -301,8 +498,8 @@
 <div class="row">
 <img src="img/11 (3).png" style="width:45%"alt="">
 
-<h4>AgricFinance
-</h4>
+<h3>AgricFinance
+</h3>
 <p>AgricFinance is a micro-financing scheme for small farmers. It will make grassroots financing such as lending, crowdfarming available and enhance financial support to farmers. AgricFinance will also enable farm insurance and farmers pension.
 
 </p>
@@ -313,8 +510,8 @@
 <img src="img/11 (4).png" style="width:45%"alt="">
 
 
-<h4>AgriChain
-</h4>
+<h3>AgriChain
+</h3>
 <p>AgriChain is a supply chain architecture that tracks and monitors crops right from the time they are harvested to the time they are received by retailers/consumers.
 </p>
 
@@ -322,8 +519,8 @@
 
 <div class="row">
 <img src="img/11 (5).png" style="width:45%"alt="">
-<h4>AgriContracts
-</h4>
+<h3>AgriContracts
+</h3>
 
 <p>Agrichainx transpose farming contracts to smart farming contracts in a distributed database. And it will include smart contracts between various service providers and agriculture stakeholders.
 </p>
@@ -334,7 +531,7 @@
 
 <div class="row">
 <img src="img/11 (6).png" style="width:45%"alt="">
-<h4>AgricData</h4>
+<h3>AgricData</h3>
 <p>Farmer’s digital form of identification will be created and stored in the IPFS. This digital identity will be used for verification and validation of the smart farming contracts.
 </p>
 
@@ -345,8 +542,8 @@
 <div class="row">
 <img src="img/11 (6).png" style="width:45%"alt="">
 
-<h4>AgricHubs
-</h4>
+<h3>AgricHubs
+</h3>
 
 <p>AgricHub is an enterprise hub that facilitates regional activities taking place inside the agrichainx ecosystem. It is a central unit that looks after the interests of farmers and retailers by up a smart farming contract.
 </p>
@@ -361,8 +558,8 @@
 
 <div class="row">
 <img src="img/11 (6).png" style="width:45%"alt="">
-<h4>Logostics
-</h4>
+<h3>Logostics
+</h3>
 <p>Our partnership with reputable Logistic companies will see us exploring new possibilities for blockchain-powered supply chain management.
 </p>
 
@@ -371,8 +568,8 @@
 
 <div class="row">
 <img src="img/11 (6).png" style="width:45%"alt="">
-<h4>Precision farming
-</h4>
+<h3>Precision farming
+</h3>
 
 <p>Agrichainx IoT- based smart farming system is built for monitoring the crop field with the help of sensors (light, humidity, temperature, soil moisture, etc.) and automating the irrigation system. And this oversee the farm conditions from any location.
 </p>
@@ -380,23 +577,25 @@
 
 </div>
 
-<div class="row">
+
+<center> <div class="row-1" >
 <img src="img/11 (6).png" style="width:45%"alt="">
 
-<h4>Agricoin
-</h4>
+<h3>Agricoin
+</h3>
 <p>Agricoin are agrichainx’s institutionalized blockchain-based tokens that can be used as a form of payment settlement between participants.
-</p>
+ <br><br><br></p>
+
+</div>
+</center>
+
+<center>    <button class="button"type="button" name="Learn More" >Token Sale</button>  </center>
+
+
 
 </div>
 
-
-
-<center>    <button class="button"type="button" name="Learn More" >Token Sale</button> </center> <br><br><br>
-
-
-
-</div>
+<br><br><br>
 </section>
 
 
@@ -408,104 +607,121 @@
 <div class="container">
 
 
+  <section class="section-5" style="background-color: #4CAF50;">
+  <br><br>
+
+  <center>  <div class="container">
+
+   <h1 >  PROBLEM</h1> <br>
+  <h6 style="color:#fff">  The production, transformation and distribution of food and agricultural products are generally accepted as routine aspects of daily life around the world. Therefore, such activities have rarely been addressed within the realm of ethics. Centralized trade barriers and structures have reduced trade transactions, indirectly limited access to secure food, created price manipulation by middlemen and intermediaries and these has painted the agricultural product and commodity market as not risk worthy.</h6> </div>
+  </center>
+  <br><br>
+<div class="row">
+  <center>    <img src="img/11 (4).png" style="width:45%"alt="">
+  <h4> Poor Access to Open Market</h4>
+  <p>Farmers are forced to sell their produce at throw away prices to traders as soon as they harvest. They do not have access to information and not connected to a pool of buyers.
+  .</p>  <button class="button"type="button" name="Learn More" >Learn More</button>
+  <br><br></center>
+  </center>  </div>
+
+  <div class="row">
+  <center>      <img src="img/11 (1).png" style="width:45%"alt="">
+    <h4>  Poor Data Management
+  </h4>
+  <p>    Despite the rapidly expanding adoption of agricultural technologies, post-harvest operations are impaired by systems that only manage a small part of the supply chain
+</p>
+  <button class="button"type="button" name="Learn More" >Learn More</button>
+  <br><br></center>
+  </center>        </div>
+
+  <div class="row">
+  <center>  <img src="img/11 (3).png" style="width:45%"alt="">
+  <h4> Lack of Trust and Visibility
+  </h4>
+  <p>    The complexity and barrier in global supply chain make it harder to follow the path of agricultural commodity to market.<br><br><br> <br> </p>
+
+  <button class="button"type="button" name="Learn More" >Learn More</button>
+  <br><br></center>
+  </center>        </div>
+
+  <div class="row">
+  <center>  <img src="img/11 (6).png" style="width:45%"alt="">
+
+  <h4>  Traceability
+  </h4>
+  <p> More consumers worldwide are demanding information as they have the right to know where their food has come from, how it was transported and what practices were used in its production.
+
+  </p>
+
+  <button class="button"type="button" name="Learn More" >Learn More</button>
+  <br><br>
+  </center>
+  </center>
 
 
-<center>  <div class="container">
-
- <h1 >  PROBLEM</h1> <br>
-<h6 style="color:#fff">  The production, transformation and distribution of food and agricultural products are generally accepted as routine aspects of daily life around the world. Therefore, such activities have rarely been addressed within the realm of ethics. Centralized trade barriers and structures have reduced trade transactions, indirectly limited access to secure food, created price manipulation by middlemen and intermediaries and these has painted the agricultural product and commodity market as not risk worthy.</h6> </div>
-</center>
-<br><br>
-<div class="row ">
-
-
-<h2 style=" color: #fff">1.   Poor Access to Open Market
-</h2> <br><br>
-<center><h6 style=" color: #fff">  Farmers are forced to sell their produce at throw away prices to traders as soon as they harvest. They do not have access to information and not connected to a pool of buyers.
-.</h6></center>
-
-</div>
-
-
-<div class="row ">
-
-
-<h2 style=" color: #fff">2.   Poor Data Management
-</h2> <br><br>
-<center><h6 style=" color: #fff">  Despite the rapidly expanding adoption of agricultural technologies, post-harvest operations are impaired by systems that only manage a small part of the supply chain
-</h6></center>
-</div>
-
-<div class="row ">
-
-
-<h2 style=" color: #fff">3.   Lack of Trust and Visibility</h2> <br><br>
-<center><h6 style=" color: #fff">  The complexity and barrier in global supply chain make it harder to follow the path of agricultural commodity to market.
-</h6></center><br>
-
-</div>
-
-<div class="row ">
-
-
-<h2 style=" color: #fff">4.   Traceability</h2> <br><br>
-<center><h6 style=" color: #fff">  More consumers worldwide are demanding information as they have the right to know where their food has come from, how it was transported and what practices were used in its production.
-</h6></center>
-</div>
-
-<div class="row ">
-
-
-
-<h2 style=" color: #fff">5.    lack of Access to Advance Farming
-</h2> <br><br>
-<center><h6 style=" color: #fff">   There is constant loss of crops due to lack smart farming system for monitoring crop field with the help of sensors to have soil data such as (light, humidity, temperature, soil moisture, etc.) and to automate the irrigation system.
-</h6></center>
-</div>
-
-<div class="row ">
+  </div><br><br><br>
+  </section>
 
 
 
 
-<h2 style=" color: #fff">6.    Poor Financial Services
+    <section class="section-5" style="background-color: #4CAF50;">
+    <br><br>
 
-</h2> <br><br>
-<center><h6 style=" color: #fff">   Lack of access to efficient financial services is depriving farmers of the possibilities to grow their businesses or convert their ideas into new profitable projects.
-</h6></center>
+    <center>  <div class="container">
+
+     <h1 > </h1> <br>
+   </div>
+    </center>
+    <br><br>
+  <div class="row">
+    <center>    <img src="img/11 (4).png" style="width:45%"alt="">
+    <h4>lack of Access to Advance Farming</h4>
+    <p> There is constant loss of crops due to lack smart farming system for monitoring crop field with the help of sensors to have soil data such as (light, humidity, temperature, soil moisture, etc.) and to automate the irrigation system.
+</p>  <button class="button"type="button" name="Learn More" >Learn More</button>
+    <br><br></center>
+    </center>  </div>
+
+    <div class="row">
+    <center>      <img src="img/11 (1).png" style="width:45%"alt="">
+      <h4>  Poor Financial Services
+    </h4>
+    <p>     Lack of access to efficient financial services is depriving farmers of the possibilities to grow their businesses or convert their ideas into new profitable projects.<br> <br> <br><br>
+</p>
+    <button class="button"type="button" name="Learn More" >Learn More</button>
+    <br><br></center>
+    </center>        </div>
+
+    <div class="row">
+    <center>  <img src="img/11 (3).png" style="width:45%"alt="">
+    <h4>  Slow Cash Settlements
+    </h4>
+    <p>    The traditional financial and verification setups offer a major drawback in cash settlement which births transaction bottlenecks. <br><br><br><br><br><br> </p>
+
+    <button class="button"type="button" name="Learn More" >Learn More</button>
+    <br><br></center>
+    </center>        </div>
+
+    <div class="row">
+    <center>  <img src="img/11 (6).png" style="width:45%"alt="">
+
+    <h4>   Lack of Information
+    </h4>
+    <p>   Most farmers are operating at just 40% of their potential capacity because of poor access to information and this affects farmer’s ability to plan and harvest more effectively and gain access to market.
 <br><br><br>
-</div>
+    </p>
 
-<div class="row ">
-
-
-
-
-
-<h2 style=" color: #fff">7.  Slow Cash Settlements
+    <button class="button"type="button" name="Learn More" >Learn More</button>
+    <br><br>
+    </center>
+    </center>
 
 
-</h2> <br><br>
-<center><h6 style=" color: #fff">   The traditional financial and verification setups offer a major drawback in cash settlement which births transaction bottlenecks.
-</h6></center><br>
-</div>
-
-
-<div class="row ">
+    </div><br><br><br>
+    </section>
 
 
 
-
-
-
-<h2 style=" color: #fff">8.    Lack of Information
-
-
-
-</h2> <br><br>
-<center><h6 style=" color: #fff">   Most farmers are operating at just 40% of their potential capacity because of poor access to information and this affects farmer’s ability to plan and harvest more effectively and gain access to market.
-</h6></center>
-</div>
 
 
 
@@ -520,15 +736,15 @@
 <div class="row">
 <center>    <img src="img/11 (4).png" style="width:45%"alt="">
 <h4>Marketplace </h4>
-<p>An efficient and robust digital marketplace that allow buyers and growers to connect directly to consumers, increasing the amount of profits that go to the farmers.</p>  <button class="button"type="button" name="Learn More" >Learn More</button>
+<p>An efficient and robust digital marketplace that allow buyers and growers to connect directly to consumers, increasing the amount of profits that go to the farmers. </p>  <button class="button"type="button" name="Learn More" >Learn More</button>
 <br><br></center>
 </center>  </div>
 
 <div class="row">
 <center>      <img src="img/11 (1).png" style="width:45%"alt="">
-  <h4>  Supply chain tracking and automation
+  <h4>  Supply chain tracking automation
 </h4>
-<p>  Agrichainx records every stage of growth for a registered crop, from seeding to flowering, to selling to consumers and wholesalers, which creates transparency about the produce for the buyer or consumer.
+<p>  Agrichainx records stages of growth for registered crop,  to selling to consumers to creates transparency about the produce for buyers.
 </p>
 <button class="button"type="button" name="Learn More" >Learn More</button>
 <br><br></center>
@@ -584,8 +800,8 @@ And these Data helps in monitoring crop growth, harvesting, and expected yields.
 
 </h4>
 
-<p>Farmers can use the verification for funding or purchasing crop. And smart lending and insurance options.
-</p><br>
+<p>Farmers can use the verification for funding or purchasing crop. And smart lending and insurance options. <br>
+</p><br><br>
 <button class="button"type="button" name="Learn More" >Learn More</button>
 <br><br></center>
 </center>        </div>
@@ -632,9 +848,7 @@ And these Data helps in monitoring crop growth, harvesting, and expected yields.
 <center>    <h1 >How agrichainx Blockchain Ecosystem Works </h1> <br>
 <h6 style="color:#fff"> Agrichainx Blockchain Ecosystem has been designed to be self-expanding and effortlessly scalable to support all types of small holder farming, ranging from agricultural and commodity trade, supply and value, smart agriculture, agricultural funding, logistics to global commercial trade, with market size of up to 20 trillion USD.</h6>
 </center>
-<br><br>
-<center><img src="img/222.png" class="ecosystem" alt=""></center>
-<br><br>
+
 <div class="row ">
 
 
@@ -699,7 +913,12 @@ Streamlining Internal Documents
 <center><i style="margin-right:30px"  class="fab fa-facebook-f"></i>
 <p style=" color: #fff">	Banks, payment service providers, escrow agents</p> </center>-->  <br>
 </div>
+<div class="container">
+  <br><br>
+  <center><img src="img/222.png" class="ecosystem" alt=""></center>
+  <br><br>
 
+</div>
 <div class="row ">
 
 <h2 style=" color: #fff">3.  Blockchain Solutions</h2> <br><br>
@@ -761,6 +980,47 @@ Supply Chain Efficiency
 </section>
 
 
+<section class="section-4" style="background-color:white">
+<br><br>
+
+<div class="container">
+
+<center><h1 style="color:#666">Don’t miss our blog videos!</h1></center>
+
+<div class="row " style="background-color:white">
+<iframe width="100%" height="215" rc="https://www.youtube.com/embed/_6L7FRKGg2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+<div class="row " style="background-color:white">
+<iframe width="100%" height="215" rc="https://www.youtube.com/embed/n84GjJPj5VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+
+
+<div class="row " style="background-color:white">
+<iframe width="100%" height="215" rc="https://www.youtube.com/embed/_6L7FRKGg2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+<div class="row " style="background-color:white">
+<iframe width="100%" height="215" rc="https://www.youtube.com/embed/n84GjJPj5VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+
+
+
+
+
+
+
+</div>
+<br>
+<center>    <button class="button"type="button" name="Learn More" >Watch More</button> </center> <br><br><br>
+
+<br><br>
+</section>
+
+
+
 
 <section class="section-3">
 <div class="container">
@@ -768,34 +1028,41 @@ Supply Chain Efficiency
 <div class="container">
 <div class="container">
 
-<center>    <h1 >InBit Token </h1> <br>
-<h4 >InBit tokens are required to access and activate Smart Contracts.</h4>
+<center>    <h1 >Agrichainx Token Details </h1> <br>
+<h4 >The Agrichainx Token is considered as the most valuable asset on the network. The token will be referred to as Agricoin “AGN” and will be issued to serve as fuel for the ecosystem and as a form of exchanging on the platform to give incentives to users, to encourage trade and to build a trust less platform to facilitate market activities.</h4>
 </center>
 
 </div>
 </div> <br>
-<div class="row" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);padding:16px;">
-<img src="img/11 (1).png" style="width:45%"alt=""><br><br>
-<p>As long as the Smart Contract remains in force and effect, the service fee paid in tokens is locked as part of the Smart Contract</p>
+
+
+
+<br><br><br>
+<div class="rar">
+  Symbol AGN
 </div>
-
-<div class="row" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);padding:16px;">
-<img src="img/11 (2).png" style="width:45%"alt=""><br><br>
-<p> The more Smart Contracts are in use at any point in time, the more tokens are locked</p>
-<br><br>
+<div class="rar">
+  TYPE   ERC-20
 </div>
-
-<div class="row" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);padding:16px;">
-<img src="img/11 (3).png" style="width:45%"alt=""><br><br>
-<p> The number of InBit tokens frozen at any point in time has a direct correlation with the demand for our Smart Contracts.</p>
-</div>
-
-
-
+<div class="rar">
+DECIMAL 18</div>
+<div class="rar">
+  TOKEN PRICE
+  1 AGN = $0.5</div>
+<div class="rar">
+Accepted Currencies ETH, BTC, NGN</div>
+<div class="rar">
+Soft Cap $5,000,000</div>
+<div class="rar">
+Hard Cap $50,000,000</div>
+<div class="rar">
+TOTAL TOKENS 200,000,000 AGN</div>
 
 </div>
 
 </section>
+
+
 
 <section class="section-4" style="background-color:#f5f3f5;">
 <br><br>
@@ -818,19 +1085,6 @@ Supply Chain Efficiency
 <p>Insurance coverage and FarmersPension</p>
 <p>Expansion of Agrichainx Blockchain Ecosystem by attracting businesses from multiple agric industries and regions.</p>
 </div>
-
-
-
-
-
-
-
-</div>
-
-<center>    <button class="button"type="button" name="Learn More" >Token Sale</button> </center>
-
-
-</section>
 
 <section class="section-4" style="background-color:#f5f3f5;">
 <br><br>
@@ -866,112 +1120,119 @@ Supply Chain Efficiency
 </section>
 
 
-<section class="section-5">
-<div class="container">
-<br><br>
-<div class="row">
+
+<div class="container pad" >
+  <h1 style="color:  #3B5323">TOKEN DISTRIBUTION</h1>
+  <p>Private Sale 15,000,000</p>
+  <p>Pre-sale Tokens 30,000,000</p>
+  <p>Team, Partners/Advisors/ Contractors   3,000,000</p>
+  <p> 16,000,</p>
+  <p>Founders Team 5,000,000</p>
+  <p>Developers/Marketers 2,000,</p>
+  <p>Airdrop and Bounty 14,000,000</p>
+  <p>Reserved Funds 40,000,000</p>
+
+<br>
+<h1 style="color:  #3B5323">Funds Allocation</h1>
+
+<p>Development 50 %</p>
+<p>Community / CSR 10 %</p>
+<p>Branding, Promotion and Marketing 10 %</p>
+<p>Administration 15%</p>
+<p>Reserve 10 %</p>
+<p>Security and Legal Expenses 5 %</p><br>
+
+<h1 style="color:  #3B5323">Roadmap</h1>
+
+<h3>Q4: 2018</h3>
+
+<p>Idea Conceptualized</p>
+<p>Proving the concept can work</p>
+<p>Research and Development</p>
+<p>Strategic Plan</p>
+<br>
+
+<h3>Q1: 2019
+</h3>  <p>Team Assemble</p>
+<p>Whitepaper Development</p>
+<p>Awareness Creation and consultation</p>
+<p>Preparation for Stake Offering</p>
+<br>
+
+<h3>Q2: 2019</h3>
+<p>Agrichainx Website Launched</p>
+<p>Marketing and Initial Stake Offering Begins</p>
+<p>Private and Presale Begins</p><br>
+
+<h3>Q3: 2019
+</h3>
+<p>Main Sale Begins</p>
+<p>Launch of Agrichainx ERC20 P2P smart contracts</p>
+<p>Internal Exchange Development</p>
+
+<br>
+
+<h3>Q4: 2019
+</h3>
+<p>Partnership with major stakeholders.</p>
+<p>Alliance with agricultural products processing companies.</p>
+<p>Exchange Listing</p>
+
+<br>
+
+<h3>Q1: 2020
+</h3>
+<p>Launch of Agrichainx Marketplace</p>
+<p>Agrichainx Center Platform development and beta testing begins</p> <br>
+<h3>Q2: 2020
+</h3>
+<p>AGNwallet</p>
+<p>Launched of Agricfinance</p>
+<p>Local Agent Center Launched</p>
+<br>
+
+<h3>Q3: 2020
+</h3>
+<p>Smart Agric Farming functionality Beta Testing.</p>
+<p>AgricCard-Touch and Pay Mobile Solution</p>
+<p>AgricPay</p><br>
+<h3>Q4: 2020
+</h3>
+
+<p>Farmers Pension launched</p>
+<p>Launch of Agrichainx mobile app on Google and Apple stores.</p>
+<p>IOT Sensor and Monitoring Satellite Deployment.</p><br>
+<h3>Q1: 2021
+</h3>
+<p>Drones acquired for farming and tracking functionality.</p>
+<p>Development, launch, and trials of AI and data capturing system prototype.</p><br>
+<h3>Q2: 2021
+</h3>
 
 
+<p>Deployment of POC Sensors and initial Data Baseline creation.</p>
+<p>Initial data gathering, data scientists start creating control-guide structures. AgricStorage</p>
+<br>
 
-<center>    <img src="img/11 (4).png" style="width:45%"alt="">
-<h4>  TOKEN DISTRIBUTION
-</h4>
-<p>  Private Sale 15,000,000</p>
-<p>  Pre-sale Tokens 30,000,000</p>
-<p>  Main Sale 75,000,000</p>
-<p>  Team, Partners/Advisors/ Contractors   3,000,000</p>
-<p>  Stakeholders 16,000,000</p>
-<p>  Founders Team 5,000,000</p>
-<p>  Developers/Marketers 2,000,000</p>
-<p>  Airdrop and Bounty 14,000,000</p>
-<p>  Reserved Funds 40,000,000</p>
-
-<button class="button"type="button" name="Learn More" >Learn More</button>
-<br><br></center>
-</center>  </div>
-
-<div class="row">
-<center>      <img src="img/11 (1).png" style="width:45%"alt="">
-  <h4>  Supply chain tracking and automation
-</h4>
-<p>  Agrichainx records every stage of growth for a registered crop, from seeding to flowering, to selling to consumers and wholesalers, which creates transparency about the produce for the buyer or consumer.
-</p>
-<button class="button"type="button" name="Learn More" >Learn More</button>
-<br><br></center>
-</center>        </div>
-
-<div class="row">
-<center>  <img src="img/11 (3).png" style="width:45%"alt="">
-<h4>  Information and data visibility
-</h4>
-<p>  The digital ledger solution provides immutable information providing trust and transparency
-  throughout the supply chain.</p>
-
-<button class="button"type="button" name="Learn More" >Learn More</button>
-<br><br></center>
-</center>        </div>
-
-<div class="row">
-<center>  <img src="img/11 (6).png" style="width:45%"alt="">
-
-<h4>Recordkeeping and proof of origin
-</h4>
-<p>As commodities move along the supply chain, proof of origin can be established and also proof of income all recorded all in digital ledger.
-</p>
-
-<button class="button"type="button" name="Learn More" >Learn More</button>
-<br><br>
-</center>
-</center>        </div>
-
-
-</div><br><br><br>
-</section>
-
-
-
-
-
-<section class="section-4" style="background-color:white">
-<br><br>
-
-<div class="container">
-
-<center><h1 style="color:#666">Don’t miss our blog videos!</h1></center>
-
-<div class="row " style="background-color:white">
-<iframe width="100%" height="215" src="https://www.youtube.com/embed/_6L7FRKGg2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-
-<div class="row " style="background-color:white">
-<iframe width="100%" height="215" src="https://www.youtube.com/embed/n84GjJPj5VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-
-
-
-<div class="row " style="background-color:white">
-<iframe width="100%" height="215" src="https://www.youtube.com/embed/_6L7FRKGg2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-
-<div class="row " style="background-color:white">
-<iframe width="100%" height="215" src="https://www.youtube.com/embed/n84GjJPj5VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-
-
-
-
-
+<h3>Q3: 2021</h3>
+<p>Expansion to new markets and global sales.</p> <br><br> </center>
+</div>
 
 
 
 </div>
-<br>
-<center>    <button class="button"type="button" name="Learn More" >Watch More</button> </center> <br><br><br>
 
-<br><br>
+<center>    <button class="button"type="button" name="Learn More" >Token Sale</button> <br><br><br><br> </center>
+
+
 </section>
 
-<section class="section-3" style="background-color:#f5f3f5">
+
+
+
+
+
+<section class="section-3" style="background-color:#fff">
 <div class="container">
 <br><br>
 <div class="container">
@@ -1256,5 +1517,34 @@ document.getElementById("mySidenav").style.width = "0";
 }
 </script>
 
+
+<script type="text/javascript">
+  var Index = 1;
+  Slides(Index);
+
+  function Slides(n) {
+    var k;
+    var a = document.getElementsByClassName('quote-slide');
+    if (n > a.length) {Index = 2}
+    if (n < 1) {Index = a.length};
+    for (var k = 0; k < a.length; k++) {
+      a[k].style.display = 'none';
+    }
+    a[Index-1].style.display = 'block';
+  }
+  var my = 0;
+  carousel();
+  function carousel() {
+    var k;
+    var y = document.getElementsByClassName('quote-slide');
+    for (var k = 0; k < y.length; k++) {
+      y[k].style.display = 'none';
+    }
+    my++;
+    if (my > y.length) {my = 1}
+    y[my-1].style.display = 'block';
+    setTimeout(carousel, 12000);
+  }
+</script>
 </body>
 </html>

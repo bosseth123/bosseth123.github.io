@@ -1,0 +1,115 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+
+
+
+<div class="quote-slide">
+CAT
+</div>
+<div class="quote-slide">
+CAR
+</div>
+
+<div class="quote-slide">
+CAM
+</div>
+
+<div class="quote-slide">
+CATB
+</div>
+
+
+
+<div class="myImage2">
+	<img src="img/333.png" alt="">
+</div>
+
+<div class="myImage2">
+	<img src="img/222.png" alt="">
+</div>
+
+<div class="myImage2">
+	<img src="img/333.png" alt="">
+</div>
+
+<div class="myImage2">
+	<img src="img/222.png" alt="">
+	CATB
+
+</div>
+
+
+
+
+		<script type="text/javascript">
+					var IndexNum = 1;
+					numSlides(IndexNum);
+					function numSlides(n) {
+						var k;
+						var num = document.getElementsByClassName('myImage2');
+						if (n > num.length) {IndexNum = 2}
+						if (n < 1) {IndexNum = num.length};
+						for (var k = 0; k < num.length; k++) {
+							num[k].style.display = 'none';
+						}
+						num[IndexNum-1].style.display = 'block';
+					}
+					var myNum = 0;
+					owlcarousel();
+					function owlcarousel() {
+						var k;
+						var y = document.getElementsByClassName('myImage2');
+						for (var k = 0; k < y.length; k++) {
+							y[k].style.display = 'none';
+						}
+						myNum++;
+						if (myNum > y.length) {myNum = 1}
+						y[myNum-1].style.display = 'block';
+						setTimeout(owlcarousel, 1000);
+					}
+			</script>
+
+
+
+
+
+				<script type="text/javascript">
+					var Index = 1;
+					Slides(Index);
+
+					function Slides(n) {
+						var k;
+						var a = document.getElementsByClassName('quote-slide');
+						if (n > a.length) {Index = 2}
+						if (n < 1) {Index = a.length};
+						for (var k = 0; k < a.length; k++) {
+							a[k].style.display = 'none';
+						}
+						a[Index-1].style.display = 'block';
+					}
+					var my = 0;
+					carousel();
+					function carousel() {
+						var k;
+						var y = document.getElementsByClassName('quote-slide');
+						for (var k = 0; k < y.length; k++) {
+							y[k].style.display = 'none';
+						}
+						my++;
+						if (my > y.length) {my = 1}
+						y[my-1].style.display = 'block';
+						setTimeout(carousel, 1000);
+					}
+			</script>
+	</body>
+</html>
