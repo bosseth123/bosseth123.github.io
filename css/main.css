@@ -13,6 +13,9 @@
 }
 
 
+.secure
+
+
 input {
     height: 40px;
     display: block;
@@ -96,6 +99,8 @@ font-size: 22px;
 
 
   }
+
+
 
 .row-1{
   width: 35%;
@@ -192,7 +197,7 @@ header .branding h1{margin:0px; padding: 0px; display: inline}
 
 header nav, .whatsapp{float:right;}
 
-header .highlight, header .current a{ color: #3B5323;
+header .highlight, header .current a{ color: #4CAF50;
   font-weight: bold;}
 
   header a:hover{color:#3B5323;}
@@ -267,6 +272,16 @@ text-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 
+  .section-7 .row{
+
+
+width: 19%;
+float: left;
+margin: 5px;
+
+
+
+  }
 
 .workspace{
     background-color: #f5f3f5;
@@ -365,6 +380,11 @@ text-shadow: 0 0 15px rgba(0,0,0,0.5);
   width: 70%;
   margin-left:190px; font-size: 18px
 }
+.section-4 .aaa
+
+{
+  float:right
+}
 
 /*----------------------MEDIA QUERIES------------------------*/
 /*---------------------MEDIA QUERIES----------------------------*/
@@ -386,6 +406,22 @@ ul, li{
 
 
 @media(max-width:780px){
+
+  .section-4 .aaa
+
+  {
+    float:none
+  }
+
+  .section-7 .row{
+
+
+width: auto;
+float: none;
+
+
+
+  }
   .pad{
     padding: auto
   }
@@ -598,6 +634,11 @@ margin-bottom: 10%;
 
 
 @media(max-width:500px){
+  .section-4 .aaa
+
+  {
+    float:none
+  }
 
   .quote-slide{
     min-height: 260px;
