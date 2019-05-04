@@ -11,52 +11,104 @@
 
 <title>agrichainx.com | welcome</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <link rel="stylesheet" href="css/dropdown.css">
 <link rel="stylesheet" href="css/main.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
   cursor: pointer;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
-
-.dropdown {
-  position: relative;
-  display: inline;
-}
-
-.dropdown-content {
-  display: none;
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
-  background-color: #f1f1f1;
+  top: 40%;
   width: auto;
-  height:250px;
-  overflow-y:inherit;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 20px;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-.dropdown-content a {
-  color: black;
-  text-decoration: none;
-  display: block;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.dropdown a:hover {background-color: #ddd;}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
-.show {display: block;}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
 /*table*/
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
@@ -141,7 +193,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   -webkit-animation-duration: 2.5s;
   animation-name: fade;
 
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
@@ -306,7 +358,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 <main style="z-index:-1">
 
 
-<section class="section-1">
+<section class="section-1 parallax">
 <div class="container">
   <div class="row" >
 
@@ -427,121 +479,9 @@ body {font-family: Verdana, sans-serif; margin:0}
 <br>
 
 </section >
-<div class="container">
-  <h2>Clickable Dropdown</h2>
-  <p>Click on the button to open the dropdown menu.</p>
-
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-
-  </div>
-
-  <div class="dropdown">
-    <button onclick="myFunction1()" class="dropbtn">Dropdown</button>
-
-  </div>
-
-
-  <div class="dropdown">
-    <button onclick="myFunction2()" class="dropbtn">Dropdown</button>
-
-  </div>
-
-
-  <div class="dropdown">
-    <button onclick="myFunction3()" class="dropbtn">Dropdown</button>
-
-  </div>
-  <div class="dropdown">
-    <button onclick="myFunction4()" class="dropbtn">Dropdown</button>
-
-  </div>
-
-  <div class="dropdown">
-    <button onclick="myFunction5()" class="dropbtn">Dropdown</button>
-
-  </div>
-
-
-  <div class="dropdown">
-    <button onclick="myFunction6()" class="dropbtn">Dropdown</button>
-
-  </div>
-
-
-  <div class="dropdown">
-    <button onclick="myFunction7()" class="dropbtn">Dropdown</button>
-
-  </div>
-
-  <script>
-  /* When the user clicks on the button,
-  toggle between hiding and showing the dropdown content */
-  function myFunction() {
-    document.getElementById("0").classList.toggle("show");
-  }
-  function myFunction1() {
-    document.getElementById("1").classList.toggle("show");
-  }
-
-  function myFunction2() {
-    document.getElementById("2").classList.toggle("show");
-  }
-
-  function myFunction3() {
-    document.getElementById("3").classList.toggle("show");
-  }
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-
-  </script>
-
-
-</div>
-<br><br><br>
-<section>
-<div class="container">
-
-  <div id="0" class="dropdown-content">
-    <a href="#home">Home0</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-
-  <div id="1" class="dropdown-content">
-<center>  <h3>AgricTrade</h3>
-  <p>  AgricTrade is an online marketplace connecting agri trade networks from farmers to buyers. It create a direct business tie-ups between farmers, transporters, cold storage providers, retailers, and even consumers.
-</p><center>
-  </div>
-
-  <div id="2" class="dropdown-content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-
-
-  <div id="3" class="dropdown-content">
-    <a href="#home">Home3</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
 
 
 
-</div>
-</section>
 
 <section class="section-2">
   <br><br><br>
@@ -565,8 +505,328 @@ body {font-family: Verdana, sans-serif; margin:0}
 <div class="container">
 <h1>The Agrichainx Ecosystem
 </h1>
+</center>
+</div>
 
-</div> </center>
+<section  style="background-color:#f5f3f5">
+
+<br><br>
+<div class="container">
+
+
+  <div class="dropdown">
+     <img src="img/service-icon-a.png" onclick="myFunction()" class="dropbtn" alt="">
+
+  </div>
+
+
+    <div id="0" class="dropdown-content fade ">
+      <center>     <img src="img/service-icon-a.png" alt=""> <span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span> </center>
+
+    <center>  <h3>AgricTrade</h3>
+        <p>  AgricTrade is an online marketplace connecting agri trade networks from farmers to buyers. It create a direct business tie-ups between farmers, transporters, cold storage providers, retailers, and even consumers.
+      </p></center>
+    </div>
+
+
+
+  <div class="dropdown">
+    <img src="img/service-icon-b.png"  onclick="myFunction1()" class="dropbtn" alt="">
+
+  </div>
+
+  <div id="1" class="dropdown-content fade">
+    <center>     <img src="img/service-icon-a.png" alt=""> <span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span> </center>
+
+    <center>  <h3>AgricStorage</h3>
+      <p>
+AgricStorage is Agric’s network of cold storage facilities across Nigeria and Africa partnered with local farmers and retailers for preserving their crop stocks.
+  </p></center>
+  </div>
+  <div class="dropdown">
+    <img src="img/service-icon-c.png"  onclick="myFunction2()" class="dropbtn" alt="">
+
+  </div>
+  <div id="2" class="dropdown-content fade">
+    <center>     <img src="img/service-icon-a.png" alt="">    <span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span> </center>
+</center>
+  <h3>        AgricFinance
+</h3>
+      <p>
+        AgricFinance is a micro-financing scheme for small farmers. It will make grassroots financing such as lending, crowdfarming available and enhance financial support to farmers. AgricFinance will also enable farm insurance and farmers pension.
+  </p>  </div>
+
+
+  <div class="dropdown">
+  <img src="img/service-icon-d.png"  onclick="myFunction3()" class="dropbtn" alt="">
+
+  </div>
+
+
+    <div id="3" class="dropdown-content fade">
+      <center>     <img src="img/service-icon-a.png" alt="">         <span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span> </center>
+ </center>
+
+      <center>  <h3>                    AgricData
+
+  </h3>
+        <p>
+          Farmer’s digital form of identification will be created and stored in the IPFS. This digital identity will be used for verification and validation of the smart farming contracts.
+    </p></center>
+    </div>
+
+  <div class="dropdown">
+    <img src="img/service-icon-a.png" onclick="myFunction4()" class="dropbtn" alt="">
+
+  </div>
+
+
+      <div id="4" class="dropdown-content fade">
+        <center>     <img src="img/service-icon-a.png" alt=""><span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span> </center>
+
+        <center>  <h3>                AgriContracts
+
+    </h3>
+          <p>
+
+            Agrichainx transpose farming contracts to smart farming contracts in a distributed database. And it will include smart contracts
+      </p></center>
+      </div>
+
+  <div class="dropdown">
+  <img src="img/service-icon-b.png" onclick="myFunction5()" class="dropbtn" alt="">
+
+  </div>
+
+        <div id="5" class="dropdown-content fade">
+          <center>     <img src="img/service-icon-a.png" alt="">         <span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span> </center>
+ </center>
+
+          <center>  <h3>                      AgricHubs
+
+      </h3>
+            <p>
+              AgricHub is an enterprise hub that facilitates regional activities taking place inside the agrichainx ecosystem. It is a central unit that looks after the interests of farmers and retailers by up a smart farming contract.
+        </p></center>
+        </div>
+
+
+
+
+  <div class="dropdown">
+  <img src="img/service-icon-c.png" onclick="myFunction6()" class="dropbtn" alt="">
+
+  </div>
+
+
+          <div id="6" class="dropdown-content fade">
+            <center>     <img src="img/service-icon-a.png" alt="">     <span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span> </center>
+ </center>
+
+            <center>  <h3>                            Logostics
+
+
+        </h3>
+              <p>
+                Our partnership with reputable Logistic companies will see us exploring new possibilities for blockchain-powered supply chain management.
+          </p></center>
+          </div>
+
+
+
+  <div class="dropdown">
+    <img src="img/service-icon-d.png" onclick="myFunction7()" class="dropbtn" alt="">
+
+  </div>
+
+            <div id="7" class="dropdown-content fade">
+              <center>     <img src="img/service-icon-a.png" alt="">         <span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span> </center>
+ </center>
+
+              <center>  <h3>                              Precision farming
+
+
+          </h3>
+                <p>
+                  Agrichainx IoT- based smart farming system is built for monitoring the crop field with the help of sensors (light, humidity, temperature, soil moisture, etc.) and automating the irrigation system. And this oversee the farm conditions from any location.
+            </p></center>
+            </div>
+
+            <div class="dropdown">
+              <img src="img/service-icon-d.png" onclick="myFunction9()" class="dropbtn" alt="">
+
+            </div>
+
+
+                        <div id="9" class="dropdown-content fade">
+                          <center>     <img src="img/service-icon-a.png" alt="">     <span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span> </center>
+</center>
+
+                          <center>  <h3>                                       Agricoin
+
+
+                      </h3>
+                            <p>
+                              Agricoin are agrichaincoin’s institutionalized blockchain-based tokens that can be used as a form of payment settlement between participants.
+                        </p></center>
+                        </div>
+
+
+</Center> </section>
+
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    // document.getElementById("0").classList.toggle("show");
+    // caleb's section
+    var class_name_variable = document.getElementsByClassName("dropdown-content");
+    for(var i= 0; i <= 8;i++){
+      class_name_variable[i].style.display = "none";
+    }
+    document.getElementById("0").style.display = "block";
+    console.log("Function responding");
+    // caleb's section ends
+  }
+  function myFunction1() {
+    // document.getElementById("1").classList.toggle("show");
+    // caleb's section
+    var class_name_variable = document.getElementsByClassName("dropdown-content");
+    for(var i= 0; i <= 8;i++){
+      class_name_variable[i].style.display = "none";
+    }
+    document.getElementById("1").style.display = "block";
+    // caleb's section ends
+  }
+
+  function myFunction2() {
+    // document.getElementById("2").classList.toggle("show");
+    // caleb's section
+    var class_name_variable = document.getElementsByClassName("dropdown-content");
+    for(var i= 0; i <= 8;i++){
+      class_name_variable[i].style.display = "none";
+    }
+    document.getElementById("2").style.display = "block";
+    console.log("Function responding");
+    // caleb's section ends
+  }
+
+  function myFunction3() {
+    // document.getElementById("3").classList.toggle("show");// caleb's section
+    var class_name_variable = document.getElementsByClassName("dropdown-content");
+    for(var i= 0; i <= 8;i++){
+      class_name_variable[i].style.display = "none";
+    }
+    document.getElementById("3").style.display = "block";
+    console.log("Function responding");
+    // caleb's section ends
+  }
+  function myFunction4() {
+    // document.getElementById("4").classList.toggle("show");
+    // caleb's section
+    var class_name_variable = document.getElementsByClassName("dropdown-content");
+    for(var i= 0; i <= 8;i++){
+      class_name_variable[i].style.display = "none";
+    }
+    document.getElementById("4").style.display = "block";
+    console.log("Function responding");
+    // caleb's section ends
+  }
+  function myFunction5() {
+    // document.getElementById("5").classList.toggle("show");
+    // caleb's section
+    var class_name_variable = document.getElementsByClassName("dropdown-content");
+    for(var i= 0; i <= 8;i++){
+      class_name_variable[i].style.display = "none";
+    }
+    document.getElementById("5").style.display = "block";
+    console.log("Function responding");
+    // caleb's section ends
+  }
+  function myFunction6() {
+    // document.getElementById("6").classList.toggle("show");
+    // caleb's section
+    var class_name_variable = document.getElementsByClassName("dropdown-content");
+    for(var i= 0; i <= 8;i++){
+      class_name_variable[i].style.display = "none";
+    }
+    document.getElementById("6").style.display = "block";
+    console.log("Function responding");
+    // caleb's section ends
+  }
+  function myFunction7() {
+    // document.getElementById("7").classList.toggle("show");
+    // caleb's section
+    var class_name_variable = document.getElementsByClassName("dropdown-content");
+    for(var i= 0; i <= 8;i++){
+      class_name_variable[i].style.display = "none";
+    }
+    document.getElementById("7").style.display = "block";
+    console.log("Function responding");
+    // caleb's section ends
+  }
+
+  function myFunction9() {
+    // document.getElementById("7").classList.toggle("show");
+    // caleb's section
+    var class_name_variable = document.getElementsByClassName("dropdown-content");
+    for(var i= 0; i <= 8;i++){
+      class_name_variable[i].style.display = "none";
+    }
+    document.getElementById("9").style.display = "block";
+    console.log("Function responding");
+    // caleb's section ends
+  }
+
+  function myFunction8() {
+    // document.getElementById("8").classList.toggle("show");
+  }
+  // close the modal when the user cicks X;
+  function global_hidden(){
+    var class_name_variable = document.getElementsByClassName("dropdown-content");
+    for(var i= 0; i <= 8;i++){
+      class_name_variable[i].style.display = "none";
+    }
+  }
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+  </script>
+
+
+</div>
+<br><br><br>
+
+
+
+
+<section>
+<div class="container">
+
+
+
+
+
+
+
+
+
+
+</div>
+</section>
+
+
 
 
 
@@ -592,128 +852,6 @@ body {font-family: Verdana, sans-serif; margin:0}
 <section class="section-3">
 <div class="container">
 <center>  <img src="img/111.png" class="ecosystem"  alt="">  </center> <br><br>
-<div class="row">
-<img src="img/11 (1).png" style="width:45%"alt="">
-
-<h3>AgricTrade
-</h3>
-
-<p>AgricTrade is an online marketplace connecting agri trade networks from farmers to buyers. It create a direct business tie-ups between farmers, transporters, cold storage providers, retailers, and even consumers.
-
-</p>
-</div>
-
-<div class="row">
-<img src="img/11 (2).png" style="width:45%"alt="">
-
-
-<h3>AgricStorage
-</h3>
-
-
-<p>AgricStorage is Agric’s network of cold storage facilities across Nigeria and Africa partnered with local farmers and retailers for preserving their crop stocks.</p>
-
-
-</div>
-
-<div class="row">
-<img src="img/11 (3).png" style="width:45%"alt="">
-
-<h3>AgricFinance
-</h3>
-<p>AgricFinance is a micro-financing scheme for small farmers. It will make grassroots financing such as lending, crowdfarming available and enhance financial support to farmers. AgricFinance will also enable farm insurance and farmers pension.
-
-</p>
-
-</div>
-
-<div class="row">
-<img src="img/11 (4).png" style="width:45%"alt="">
-
-
-<h3>AgriChain
-</h3>
-<p>AgriChain is a supply chain architecture that tracks and monitors crops right from the time they are harvested to the time they are received by retailers/consumers.
-</p>
-
-</div>
-
-<div class="row">
-<img src="img/11 (5).png" style="width:45%"alt="">
-<h3>AgriContracts
-</h3>
-
-<p>Agrichainx transpose farming contracts to smart farming contracts in a distributed database. And it will include smart contracts between various service providers and agriculture stakeholders.
-</p>
-
-
-
-</div>
-
-<div class="row">
-<img src="img/11 (6).png" style="width:45%"alt="">
-<h3>AgricData</h3>
-<p>Farmer’s digital form of identification will be created and stored in the IPFS. This digital identity will be used for verification and validation of the smart farming contracts.
-</p>
-
-
-
-</div>
-
-<div class="row">
-<img src="img/11 (6).png" style="width:45%"alt="">
-
-<h3>AgricHubs
-</h3>
-
-<p>AgricHub is an enterprise hub that facilitates regional activities taking place inside the agrichainx ecosystem. It is a central unit that looks after the interests of farmers and retailers by up a smart farming contract.
-</p>
-
-
-
-</p>
-
-
-
-</div>
-
-<div class="row">
-<img src="img/11 (6).png" style="width:45%"alt="">
-<h3>Logostics
-</h3>
-<p>Our partnership with reputable Logistic companies will see us exploring new possibilities for blockchain-powered supply chain management.
-</p>
-
-
-</div>
-
-<div class="row">
-<img src="img/11 (6).png" style="width:45%"alt="">
-<h3>Precision farming
-</h3>
-
-<p>Agrichainx IoT- based smart farming system is built for monitoring the crop field with the help of sensors (light, humidity, temperature, soil moisture, etc.) and automating the irrigation system. And this oversee the farm conditions from any location.
-</p>
-
-
-</div>
-
-
-<center> <div class="row-1" >
-<img src="img/11 (6).png" style="width:45%"alt="">
-
-<h3>Agricoin
-</h3>
-<p>Agricoin are agrichainx’s institutionalized blockchain-based tokens that can be used as a form of payment settlement between participants.
- <br><br><br></p>
-
-</div>
-</center>
-
-<center>    <button class="button"type="button" name="Learn More" >Token Sale</button>  </center>
-
-
-
 </div>
 
 <br><br><br>
@@ -741,7 +879,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   <center>    <img src="img/11 (4).png" style="width:45%"alt="">
   <h4> Poor Access to Open Market</h4>
   <p>Farmers are forced to sell their produce at throw away prices to traders as soon as they harvest. They do not have access to information and not connected to a pool of buyers.
-  .</p>  <button class="button"type="button" name="Learn More" >Learn More</button>
+  .<br> </p><br>  <button class="button"type="button" name="Learn More" >Learn More</button>
   <br><br></center>
   </center>  </div>
 
@@ -750,7 +888,7 @@ body {font-family: Verdana, sans-serif; margin:0}
     <h4>  Poor Data Management
   </h4>
   <p>    Despite the rapidly expanding adoption of agricultural technologies, post-harvest operations are impaired by systems that only manage a small part of the supply chain
-</p>
+</p><br>
   <button class="button"type="button" name="Learn More" >Learn More</button>
   <br><br></center>
   </center>        </div>
@@ -808,7 +946,7 @@ body {font-family: Verdana, sans-serif; margin:0}
       <h4>  Poor Financial Services
     </h4>
     <p>     Lack of access to efficient financial services is depriving farmers of the possibilities to grow their businesses or convert their ideas into new profitable projects.<br> <br> <br><br>
-</p>
+</p><br>
     <button class="button"type="button" name="Learn More" >Learn More</button>
     <br><br></center>
     </center>        </div>
@@ -843,9 +981,6 @@ body {font-family: Verdana, sans-serif; margin:0}
 
 
 
-
-
-
 </div>
 <br><br>
 </section>
@@ -866,7 +1001,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   <h4>  Supply chain tracking automation
 </h4>
 <p>  Agrichainx records stages of growth for registered crop,  to selling to consumers to creates transparency about the produce for buyers.
-</p>
+</p><br><br>
 <button class="button"type="button" name="Learn More" >Learn More</button>
 <br><br></center>
 </center>        </div>
@@ -876,7 +1011,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 <h4>  Information and data visibility
 </h4>
 <p>  The digital ledger solution provides immutable information providing trust and transparency
-  throughout the supply chain.</p>
+  throughout the supply chain.</p><br><br>
 
 <button class="button"type="button" name="Learn More" >Learn More</button>
 <br><br></center>
@@ -888,7 +1023,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 <h4>Recordkeeping and proof of origin
 </h4>
 <p>As commodities move along the supply chain, proof of origin can be established and also proof of income all recorded all in digital ledger.
-</p>
+</p><br><br>
 
 <button class="button"type="button" name="Learn More" >Learn More</button>
 <br><br>
@@ -909,7 +1044,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 </h4>
 <p>Smart farm allows farmers to capture data in real-time, combined with IoT.
 And these Data helps in monitoring crop growth, harvesting, and expected yields.
-</p>
+</p><br>
 <button class="button"type="button" name="Learn More" >Learn More</button>
 
 <br><br></center>
@@ -945,7 +1080,7 @@ And these Data helps in monitoring crop growth, harvesting, and expected yields.
 </h4>
 
   <p>  Agrichainx provides seamless contract solutions between farmers, brokers, buyers and logistics providers.
-</p>
+</p><br>
 
 <br><br>
 
@@ -1110,65 +1245,7 @@ Supply Chain Efficiency
 
 <h2 style="text-align:center">Slideshow Gallery</h2>
 
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="img_woods_wide.jpg" style="width:100%">
-  </div>
 
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="img_5terre_wide.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="img_mountains_wide.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="img_lights_wide.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="img_nature_wide.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="img_snow_wide.jpg" style="width:100%">
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <iframe class="demo cursor" src="" onclick="currentSlide(4)" alt="Northern Lights"  height="215" src="https://www.youtube.com/embed/n84GjJPj5VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-    </div>
-  </div>
 </div>
 
 <script>
@@ -1233,6 +1310,14 @@ function showSlides(n) {
 
 <br><br>
 </section>
+
+
+
+
+
+
+
+
 
 
 
@@ -1719,7 +1804,20 @@ ________________
 <!-- javascript javascript javascript javascript javascript javascript javascript javascript javascript javascript javascript -->
 <!-- javascript javascript javascript javascript javascript javascript javascript javascript javascript javascript javascript -->
 
-
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker({
+            disableWeekends: true
+        });
+        $('.tooltipped').tooltip();
+    });
+  </script>
 
 
 <script>
