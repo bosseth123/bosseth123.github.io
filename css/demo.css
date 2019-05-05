@@ -1,12 +1,12 @@
 #slider {
-    width:auto;
+    width: 720px;
     height: 400px;
     overflow: hidden;
 }
 
 #slider .slides {
     display: block;
-    width: auto;
+    width: 6000px;
     height: 400px;
     margin: 0;
     padding: 0;
@@ -15,28 +15,12 @@
 #slider .slide {
     float: left;
     list-style-type: none;
-    width:auto;
+    width: 720px;
     height: 400px;
 }
 
 /* helper css, since we don't have images */
 
-/* helper css, since we don't have images */
-.slide1 img{
-  100%
-}
-.slide2 img{
-  100%
-}
-.slide3 img{
-  100%
-}
-.slide4 img{
-  100%
-}
-.slide5 img{
-  100%
-}
 
 .rslides {
 position: relative;
