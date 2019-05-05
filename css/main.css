@@ -52,7 +52,7 @@
 }
 
 
-.secure
+
 
 
 input {
@@ -433,18 +433,30 @@ margin: 5px;
 
 @media(max-width:1200px){
 
-ul, li{
+header ul, li{
   display: none;
 }
 
-.whatsapp{
-  display: none;
+.bosseth li, ul{
+  display: block;
 }
 
 }
+
 
 
 @media(max-width:780px){
+
+
+  .dropbtn {
+    width: 42%;
+    float:right;
+    margin: 10px 10px;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+  }
 
   .section-4 .aaa
 
@@ -674,18 +686,21 @@ margin-bottom: 10%;
 }
 
 
+}
+
+
 @media(max-width:500px){
 
 
-  .dropbtn {
-    width: 32%;
-    float:right;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 0px;
-    margin: 0px
-  }
+    .dropbtn {
+      width: 50%;
+      float:right;
+      margin: 20px 31px;
+      color: white;
+      padding: 16px;
+      border: none;
+      cursor: pointer;
+    }
 
   .dropbtn:hover, .dropbtn:focus {
     background-color:#3B5323;

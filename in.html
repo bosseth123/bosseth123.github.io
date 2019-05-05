@@ -1,65 +1,41 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
 		<meta charset="utf-8">
-		<style media="screen">
-			#slideshow {
-    margin: 50px auto;
-    position: relative;
-    width: 240px;
-    height: 240px;
-    padding: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
-}
-
-#slideshow > div {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-}
-		</style>
 		<title></title>
+		<style media="screen">
 
-
-
-
-
+		</style>
 	</head>
 	<body>
+		<ul class="rslides">
+  <li><img src="img/555.jpg" alt=""></li>
+	<li><img src="img/666.png" alt=""></li>
+	<li><img src="img/777.jpg" alt=""></li>
+</ul>
 
+<script>
 
-		<div id="slideshow">
- <div>
-	 <img src="//farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg">
- </div>
- <div>
-	 <img src="//farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
- </div>
- <div>
-	 Pretty cool eh? This slide is proof the content can be anything.
- </div>
-</div>
-
-
-			<script type="text/javascript">
-				$("#slideshow > div:gt(0)").hide();
-
-			setInterval(function() {
-			  $('#slideshow > div:first')
-			    .fadeOut(1000)
-			    .next()
-			    .fadeIn(1000)
-			    .end()
-			    .appendTo('#slideshow');
-			},  300
-			</script>
-
+	$(".rslides").responsiveSlides({
+  auto: true,             // Boolean: Animate automatically, true or false
+  speed: 500,            // Integer: Speed of the transition, in milliseconds
+  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+  pager: false,           // Boolean: Show pager, true or false
+  nav: false,             // Boolean: Show navigation, true or false
+  random: false,          // Boolean: Randomize the order of the slides, true or false
+  pause: false,           // Boolean: Pause on hover, true or false
+  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+  prevText: "Previous",   // String: Text for the "previous" button
+  nextText: "Next",       // String: Text for the "next" button
+  maxwidth: "1000%",           // Integer: Max-width of the slideshow, in pixels
+  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+  manualControls: "",     // Selector: Declare custom pager navigation
+  namespace: "rslides",   // String: Change the default namespace used
+  before: function(){},   // Function: Before callback
+  after: function(){}     // Function: After callback
+});
+</script>
 	</body>
 </html>
