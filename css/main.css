@@ -291,7 +291,7 @@ text-shadow: 0 0 15px rgba(0,0,0,0.5);
 
 .section-4 .row{
   width:46%;
-  float: left;margin: 2%; padding: 3px; background-color:#3B5323; border-radius: 10px; padding: 3%; color: #fff;
+  float: left;margin: 2%; padding: 0px; background-color:#3B5323; border-radius: 10px;  color: #fff;
 
 
 }
@@ -731,7 +731,7 @@ margin-bottom: 10%;
 
 
   .ecosystem{
-    width:90%;
+    width:100%;
   }
 
 
@@ -748,10 +748,14 @@ margin-bottom: 10%;
 }
   .text{
     width: 100%;
-    margin-left:0px; font-size: 18px
+    margin:0px; font-size: 18px
   }
-
-
+.text .container{
+  width: 100%
+}
+.section-4 .container{
+  width: 100%
+}
   .gif{
     width: 100%;
   }
