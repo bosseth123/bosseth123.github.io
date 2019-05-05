@@ -1,7 +1,7 @@
 
 
 
-.dropdown{
+.dropdowna{
   display: none;
 }
 
@@ -61,7 +61,7 @@ opacity: 0.95;
 
 
   @media screen and (max-width: 1200px) {
-    .dropdown{
+    .dropdowna{
       display: inline
     }
   }
