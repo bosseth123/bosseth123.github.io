@@ -92,6 +92,19 @@ select {
 }
 
 
+
+.vid-bgr{
+
+position: relative;
+width: 100%;
+height: 600px;
+display: flex;
+align-items: center;
+overflow: hidden;
+
+}
+
+
 .ecosystem{
   width:80%;
 }
@@ -725,6 +738,18 @@ margin-bottom: 10%;
 
 
 @media(max-width:500px){
+
+
+  .vid-bgr{
+
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  }
 
 
   .rar-1, .rar-2{
