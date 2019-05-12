@@ -727,6 +727,14 @@ margin-bottom: 10%;
 @media(max-width:500px){
 
 
+  .rar-1, .rar-2{
+    float: none;
+    width:100%;
+    padding: 5%;
+    margin: 0px 0%;
+
+  }
+
     .section-2{
 
       padding: 0px 0%;
@@ -899,7 +907,7 @@ body {
 
 
 padding-top:
-  350px;
+  100px;
 
 
 
