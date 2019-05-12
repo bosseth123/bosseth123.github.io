@@ -1,6 +1,7 @@
 
 
 .dropbtn {
+  align-items: center;
   width: 19%;
   float:right;
   margin: 20px 31px;
@@ -51,7 +52,10 @@
 
 }
 
-
+.webiner{
+  background: rgba(0, 151, 19, 0.6);
+  border: 2px
+}
 
 
 
@@ -107,6 +111,27 @@ select {
   background-color:#3B5323;
   color: #fff;
   height: 120px;
+  padding: 1%;
+
+}
+
+.rar-1{
+  float: left;
+  width:24%;
+  border: 1px solid #fff;
+  background-color:#3B5323;
+  color: #fff;
+  padding: 1%;
+
+}
+
+.rar-2{
+  float: left;
+  width:24%;
+  border: 1px solid #fff;
+  background-color:#3B5323;
+  height:80px;
+  color: #fff;
   padding: 1%;
 
 }
@@ -249,8 +274,9 @@ header .highlight, header .current a{ color: #4CAF50;
 .section-1 {
 min-height: auto;
 width: 100%;
-background: url("../img/benjamin-davies-260884-unsplash.jpg");
 
+
+padding-top: 0px;
 /*background-color: #3B5323;*/
 /*background-color:
     background: #112B3D;
@@ -265,6 +291,8 @@ background-repeat: no-repeat;
 background-attachment: local;
 text-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
+
+
 
 .section-1 .row{
   width:46%;
@@ -291,7 +319,7 @@ text-shadow: 0 0 15px rgba(0,0,0,0.5);
 
 .section-4 .row{
   width:46%;
-  float: left;margin: 2%; padding: 0px; background-color:#3B5323; border-radius: 10px;  color: #fff;
+  float: left;margin: 2%; padding: 15px; background-color:#3B5323; border-radius: 10px;  color: #fff;
 
 
 }
@@ -300,8 +328,13 @@ text-shadow: 0 0 15px rgba(0,0,0,0.5);
   float: left;margin: 2%; padding: 10px; background-color: #fff; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 
 }
+
 .section-2{
-  background-color: #f5f3f5
+
+  padding: 0px 20%;
+  text-align: center;
+color: #666;
+
 }
 .section-3{
   background-color: #f5f3f5
@@ -681,25 +714,35 @@ margin-bottom: 10%;
 
 
 
-
+.vid-bgr-container{
+  display:  none;
+}
 
 }
 
 
-}
+
 
 
 @media(max-width:500px){
 
 
+    .section-2{
+
+      padding: 0px 0%;
+      text-align: center;
+    color: #666;
+
+    }
+
     .dropbtn {
-      width: 50%;
-      float:right;
-      margin: 20px 31px;
-      color: white;
-      padding: 16px;
-      border: none;
-      cursor: pointer;
+        width: 40%;
+        float: right;
+        margin: 10px 12px;
+        color: white;
+        padding: 16px;
+        border: none;
+        cursor: pointer;
     }
 
   .dropbtn:hover, .dropbtn:focus {
@@ -768,9 +811,7 @@ margin-bottom: 10%;
 .text .container{
   width: 100%
 }
-.section-4 .container{
-  width: 100%
-}
+
   .gif{
     width: 100%;
   }
@@ -858,7 +899,7 @@ body {
 
 
 padding-top:
-  70px;
+  350px;
 
 
 
@@ -885,7 +926,6 @@ padding-top:
   margin-bottom: 10%;
 
   }
-
 
   /*----------------------contact------------------------*/
   /*---------------------contact----------------------------*/
