@@ -108,6 +108,9 @@ overflow: hidden;
 .ecosystem{
   width:80%;
 }
+.ecosystem-1{
+  width:60%;
+}
 
 .pad{
   padding: 0px 10%;
@@ -255,13 +258,20 @@ header{background-color:#3B5323 ;
 border-bottom:1px solid #4CAF50;
   width: 100%;
   position: fixed;
+
 }
+
+
+header li{
+  font-size:14px;
+}
+
 
 header a{color: #ffffff;
   text-decoration:none;
   text-transform: uppercase;}
 
- ul{margin: 10px;
+ ul{margin: 10px 5px;
   padding: 0px; /*float: right*/;}
 
  li{float: left;
@@ -303,6 +313,12 @@ background-size: cover;
 background-repeat: no-repeat;
 background-attachment: local;
 text-shadow: 0 0 15px rgba(0,0,0,0.5);
+
+  /*  background: #112B3D;
+    background: -moz-radial-gradient(50%, circle cover, #1b566b 1%, #112B3D 60%);
+    background: -webkit-radial-gradient(50%, circle cover, #1b566b 1%, #112B3D 60%);
+    background: radial-gradient(circle at 50%, #1b566b 1%, #112B3D 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b566b', endColorstr='#112B3D',GradientType=1 );*/
 }
 
 
@@ -825,7 +841,9 @@ margin-bottom: 10%;
     width:100%;
   }
 
-
+.ecosystem-1{
+  width:100%;
+}
 
 .sec-1{
   display: none;
