@@ -869,6 +869,16 @@ margin-bottom: 10%;
     display: none;
   }
 
+
+
+
+#contact-us .container{
+  width:90%
+}
+
+
+
+
 }
     .section-2{
 
@@ -949,6 +959,7 @@ margin-bottom: 10%;
   width:60%;
 }
 }
+
 @media(max-width:500px){
 
   .ecosystem-1{
