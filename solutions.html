@@ -13,6 +13,34 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <link rel="stylesheet" href="css/dropdown.css">
 <link rel="stylesheet" href="css/main.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 5000, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 <style media="screen">
   #text{
 
@@ -385,7 +413,7 @@ The digital platform enables a dependable process from the first quote request u
       </center>
       <br><br>
     <div class="row">
-      <center>    <img src="img/11 (4).png" style="width:45%"alt="">
+      <center>    <img src="img/positive.svg" style="width:45%"alt="">
       <h4>        Positive Impact Projects Only
 </h4>
       <p>
@@ -396,7 +424,7 @@ The digital platform enables a dependable process from the first quote request u
       </div>
 
       <div class="row">
-      <center>      <img src="img/11 (1).png" style="width:45%"alt="">
+      <center>      <img src="img/real.svg" style="width:45%"alt="">
         <h4>Real P2P
       </h4>
 
@@ -406,7 +434,7 @@ The digital platform enables a dependable process from the first quote request u
       </center>        </div>
 
       <div class="row">
-      <center>  <img src="img/11 (3).png" style="width:45%"alt="">
+      <center>  <img src="img/key.svg" style="width:45%"alt="">
       <h4> Access to the Unbanked
       </h4>
 <p>Especially the agricultural sector which represents a significant part of 2 billion unbanked people.
@@ -418,7 +446,7 @@ The digital platform enables a dependable process from the first quote request u
       </center>        </div>
 
       <div class="row">
-      <center>  <img src="img/11 (6).png" style="width:45%"alt="">
+      <center>  <img src="img/pension.svg" style="width:45%"alt="">
 
       <h4> Farmers’ Pension Scheme (FPS)
       </h4>
@@ -444,7 +472,7 @@ The digital platform enables a dependable process from the first quote request u
 
             <br><br>
           <div class="row text">
-            <center>    <img src="img/11 (4).png" style="width:45%"alt="">
+            <center>    <img src="img/farming.svg" style="width:45%"alt="">
             <h4>       Crowdfarming
       </h4>
 
@@ -455,7 +483,7 @@ The digital platform enables a dependable process from the first quote request u
             </div>
 
             <div class="row">
-            <center>      <img src="img/11 (1).png" style="width:45%"alt="">
+            <center>      <img src="img/community.svg" style="width:45%"alt="">
               <h4>AgricCSA (Community-supported agriculture)
             </h4>
 
@@ -465,7 +493,7 @@ The digital platform enables a dependable process from the first quote request u
             </center>        </div>
 
             <div class="row">
-            <center>  <img src="img/11 (3).png" style="width:45%"alt="">
+            <center>  <img src="img/technical.svg" style="width:45%"alt="">
             <h4>Know-How in Project Selection
 
             </h4>
@@ -479,7 +507,7 @@ The digital platform enables a dependable process from the first quote request u
             </center>        </div>
 
             <div class="row">
-            <center>  <img src="img/11 (6).png" style="width:45%"alt="">
+            <center>  <img src="img/insurance.svg" style="width:45%"alt="">
 
             <h4>Insurance
             </h4>
@@ -523,7 +551,7 @@ The digital platform enables a dependable process from the first quote request u
     <div class="container">
     <center><h1>HOW IT WORKS</h1></center>
     <div class="row">
-    <img src="img/11 (1).png" style="width:45%"alt="">
+    <img src="img/choose.svg" style="width:45%"alt="">
     <h4>Choose farm to invest in</h4>
 
   <p>Here’s how you can become an impact maker and be part of the mission to improve our farmers’ lives.
@@ -531,7 +559,7 @@ The digital platform enables a dependable process from the first quote request u
     </div>
 
     <div class="row">
-    <img src="img/11 (2).png" style="width:45%"alt="">
+    <img src="img/success.svg" style="width:45%"alt="">
     <h4>Farm successfully funded</h4>
 
   <p>Sign-up and register to be able to view and invest in the selection of farms curated for this cycle.
@@ -539,7 +567,7 @@ The digital platform enables a dependable process from the first quote request u
     </div>
 
     <div class="row">
-    <img src="img/11 (3).png" style="width:45%"alt="">
+    <img src="img/power.svg" style="width:45%"alt="">
     <h4>Empower farmers and
 improve productivity</h4>
 
@@ -552,7 +580,7 @@ improve productivity</h4>
     <section class="section-3">
     <div class="container">
     <div class="row">
-    <img src="img/11 (1).png" style="width:45%"alt="">
+    <img src="img/fruit.svg" style="width:45%"alt="">
     <h4>Fruits of your investment</h4>
 
 <p>After the harvest and once the produce has been sold, the capital will return to the investor’s wallet together with the profit shared.
@@ -560,7 +588,7 @@ improve productivity</h4>
     </div>
 
     <div class="row">
-    <img src="img/11 (2).png" style="width:45%"alt="">
+    <img src="img/security.svg" style="width:45%"alt="">
     <h4>Transparency & Security</h4>
 
 
@@ -570,7 +598,7 @@ improve productivity</h4>
     </div>
 
     <div class="row">
-    <img src="img/11 (3).png" style="width:45%"alt="">
+    <img src="img/online.svg" style="width:45%"alt="">
     <h4>All parties have online access to this contract.</h4>
 
 <p>All parties have online access to this contract. Funds/Returns will be deposited directly into investor wallet (in £/€/$) and can be transferred to any bank account worldwide or reinvested in other projects.
@@ -698,19 +726,19 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
 
 
     <div class="row">
-      <center>    <img src="img/11 (4).png" style="width:45%"alt="">
+      <center>    <img src="img/11 (4).png" style="width:45%"alt=""><br><br>
   <p>  Agrichainx’s quality assurance department works closely with our own stores as well as third party stores to monitor storage conditions and recommend remedial action as necessary.<br> <br>
   </p><br> </center>
       </div>
 
       <div class="row">
-      <center>      <img src="img/11 (1).png" style="width:45%"alt="">
+      <center>      <img src="img/11 (1).png" style="width:45%"alt=""><br><br>
       <p>Expert management of grain quality during storage ensures grain supplied to consumers meets contract specifications and complies with food safety laws.</p><br>
       <br><br></center>
       </center>        </div>
 
       <div class="row">
-      <center>  <img src="img/11 (3).png" style="width:45%"alt="">
+      <center>  <img src="img/11 (3).png" style="width:45%"alt=""><br><br>
     <p>Cleaning and drying grain is often required at harvest, particularly during wet seasons. This  reduces the likelihood of rejections leading to claims, additional haulage and redirection </p>
 
 
@@ -719,7 +747,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
       </center>        </div>
 
       <div class="row">
-      <center>  <img src="img/11 (6).png" style="width:45%"alt="">
+      <center>  <img src="img/11 (6).png" style="width:45%"alt=""><br><br>
 <p>Growers should consider whether to store unpriced grain in order to capitalise on market gains. This is particularly helpful at harvest when there may be an advantage in avoiding pricing at a typically discounted time of the marketing year.</p>
 
       </center>
@@ -766,7 +794,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
 
 
     <div class="row">
-      <center>    <img src="img/11 (4).png" style="width:45%"alt="">
+      <center>    <img src="img/measure.svg" style="width:45%"alt="">
         <h4>Measure
 
 </h4>
@@ -775,7 +803,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
       </div>
 
       <div class="row">
-      <center>      <img src="img/11 (1).png" style="width:45%"alt="">
+      <center>      <img src="img/evaluate.svg" style="width:45%"alt="">
 <h4>Evaluate
 
 </h4>
@@ -785,7 +813,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
       </center>        </div>
 
       <div class="row">
-      <center>  <img src="img/11 (3).png" style="width:45%"alt="">
+      <center>  <img src="img/manage.svg" style="width:45%"alt="">
 <h4>Manage
 
 </h4>
@@ -796,7 +824,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
       </center>        </div>
 
       <div class="row">
-      <center>  <img src="img/11 (6).png" style="width:45%"alt="">
+      <center>  <img src="img/time.svg" style="width:45%"alt="">
 <h4>Save Time
 
 </h4>
@@ -817,7 +845,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
 
 
           <div class="row">
-            <center>    <img src="img/11 (4).png" style="width:45%"alt="">
+            <center>    <img src="img/improve.svg" style="width:45%"alt="">
               <h4> Improve Efficiency
 
       </h4>
@@ -827,7 +855,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
             </div>
 
             <div class="row">
-            <center>      <img src="img/11 (1).png" style="width:45%"alt="">
+            <center>      <img src="img/reduce.svg" style="width:45%"alt="">
       <h4>Reduce Human Error
 
       </h4>
@@ -839,7 +867,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
             </center>        </div>
 
             <div class="row">
-            <center>  <img src="img/11 (3).png" style="width:45%"alt="">
+            <center>  <img src="img/profit.svg" style="width:45%"alt="">
       <h4>Drive Profits
 
       </h4>
@@ -852,7 +880,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
             </center>        </div>
 
             <div class="row">
-            <center>  <img src="img/11 (6).png" style="width:45%"alt="">
+            <center>  <img src="img/save.svg" style="width:45%"alt="">
       <h4>Save Time
 
       </h4>
@@ -915,7 +943,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
     <section class="section-3" style="background-color:#fff">
     <div class="container">
     <div class="row">
-    <img src="img/11 (1).png" style="width:45%"alt="">
+    <img src="img/trace.svg" style="width:45%"alt="">
     <h4>TRACEABILITY WITH BLOCKCHAIN</h4>
 
 <p>The Blockchain allows to verify in a transparent manner the digital history of products along the supply chain, from farmers to final consumers, guaranteeing food safety and quality against the food market falsification.
@@ -925,7 +953,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
     </div>
 
     <div class="row">
-    <img src="img/11 (2).png" style="width:45%"alt="">
+    <img src="img/certificate.svg" style="width:45%"alt="">
     <h4>CERTIFICATION</h4>
 
 <p>Certificate your activities and share all the needed information with your clients or certification providers in a centralized and easily way, reducing costs and time
@@ -935,7 +963,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
     </div>
 
     <div class="row">
-    <img src="img/11 (3).png" style="width:45%"alt="">
+    <img src="img/access.svg" style="width:45%"alt="">
     <h4>MOBILE ACCESSIBILITY</h4>
 
 <p>Free to work and manage your data everytime and everywhere in real time, using mobile interfaces and the integration of ChatBot
@@ -951,7 +979,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
         <section class="section-3" style="background-color:#fff">
         <div class="container">
         <div class="row">
-        <img src="img/11 (1).png" style="width:45%"alt="">
+        <img src="img/product.svg" style="width:45%"alt="">
         <h4>PRODUCT SPECIFICATION</h4>
 
 <p>Guarantee the techniques and the adjustment to the production policy rules, for the DOCG products and to those intended for international markets.
@@ -962,7 +990,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
         </div>
 
         <div class="row">
-        <img src="img/11 (2).png" style="width:45%"alt="">
+        <img src="img/legal.svg" style="width:45%"alt="">
         <h4>LEGAL COMPLIANCE</h4>
 
 <p>Meet the legal needs imposed by the European regulation to farms and guarantee the production chain. Always updated with the law directives
@@ -973,7 +1001,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
         </div>
 
         <div class="row">
-        <img src="img/11 (3).png" style="width:45%"alt="">
+        <img src="img/integrate.svg" style="width:45%"alt="">
         <h4> OPEN DATA INTEGRATOR</h4>
 
 <p>An automatic system to integrate information coming directly from invoices, receipts or other agri-food chain data devices without manual data uploading.
@@ -1100,7 +1128,7 @@ Functional Agrichainx ecosystem wallet will allow users to:</p>
 
 
 <div class="row">
-<center>    <img src="img/11 (4).png" style="width:45%"alt="">
+<center>    <img src="img/plant.svg" style="width:45%"alt="">
   <h4>Plant population
 
 </h4>
@@ -1111,7 +1139,7 @@ Using our AI2 technology, we can report plant population to farmers, regardless 
 </div>
 
 <div class="row">
-<center>      <img src="img/11 (1).png" style="width:45%"alt="">
+<center>      <img src="img/find.svg" style="width:45%"alt="">
 
 <h4>Weeds early detection</h4>
 
@@ -1127,7 +1155,7 @@ Smart agric can detect when a weed emerges in the field and constitutes a potent
 </center>        </div>
 
 <div class="row">
-<center>  <img src="img/11 (3).png" style="width:45%"alt="">
+<center>  <img src="img/health.svg" style="width:45%"alt="">
 
 
 <h4>Field Health</h4>
@@ -1141,7 +1169,7 @@ Smart agric can calculate the amounts of nutrients in vegetation, the water cont
 </center>        </div>
 
 <div class="row">
-<center>  <img src="img/11 (6).png" style="width:45%"alt="">
+<center>  <img src="img/insect.svg" style="width:45%"alt="">
 <h4>Insects and Disease treatment
 
 </h4>
@@ -1170,7 +1198,7 @@ Smart agric can calculate the amounts of nutrients in vegetation, the water cont
 
 
 <div class="row">
-<center>    <img src="img/11 (4).png" style="width:45%"alt="">
+<center>    <img src="img/action.svg" style="width:45%"alt="">
   <h4>Actionable Insights
 
 </h4>
@@ -1181,7 +1209,7 @@ Smart agric can calculate the amounts of nutrients in vegetation, the water cont
 </div>
 
 <div class="row">
-<center>      <img src="img/11 (1).png" style="width:45%"alt="">
+<center>      <img src="img/solution.svg" style="width:45%"alt="">
 <h4>Ultimate ag-imagery solutions
 
 
@@ -1194,7 +1222,7 @@ The UHR prioritize stressed areas that need more attention</p>
 </center>        </div>
 
 <div class="row">
-<center>  <img src="img/11 (3).png" style="width:45%"alt="">
+<center>  <img src="img/information.svg" style="width:45%"alt="">
 <h4>All information combined
 
 </h4>
@@ -1206,7 +1234,7 @@ The UHR prioritize stressed areas that need more attention</p>
 </center>        </div>
 
 <div class="row">
-<center>  <img src="img/11 (6).png" style="width:45%"alt="">
+<center>  <img src="img/manage.svg" style="width:45%"alt="">
 <h4>Task management
 
 </h4>
@@ -1236,7 +1264,7 @@ The UHR prioritize stressed areas that need more attention</p>
 
 
 <div class="row">
-<center>    <img src="img/11 (4).png" style="width:45%"alt="">
+<center>    <img src="img/demand.svg" style="width:45%"alt="">
   <h4>On-demand imagery
 
 </h4>
@@ -1247,7 +1275,7 @@ The UHR prioritize stressed areas that need more attention</p>
 </div>
 
 <div class="row">
-<center>      <img src="img/11 (1).png" style="width:45%"alt="">
+<center>      <img src="img/smart.svg" style="width:45%"alt="">
 <h4>Smart field scouting
 
 
@@ -1262,7 +1290,7 @@ The UHR prioritize stressed areas that need more attention</p>
 </center>        </div>
 
 <div class="row">
-<center>  <img src="img/11 (3).png" style="width:45%"alt="">
+<center>  <img src="img/growth.svg" style="width:45%"alt="">
 <h4>Growth problems
 
 </h4>
@@ -1276,7 +1304,7 @@ The UHR prioritize stressed areas that need more attention</p>
 </center>        </div>
 
 <div class="row">
-<center>  <img src="img/11 (6).png" style="width:45%"alt="">
+<center>  <img src="img/time.svg" style="width:45%"alt="">
 <h4>Anywhere, anytime
 
 </h4>
@@ -1303,7 +1331,7 @@ The UHR prioritize stressed areas that need more attention</p>
 
 
 <div class="row">
-<center>    <img src="img/11 (4).png" style="width:45%"alt="">
+<center>    <img src="img/care.svg" style="width:45%"alt="">
 
 <h4>24/7 Customer service and team of agronomists</h4>
 
@@ -1315,7 +1343,7 @@ As part of the services, we provide 24/7 customer support, with offices spread w
 </div>
 
 <div class="row">
-<center>      <img src="img/11 (1).png" style="width:45%"alt="">
+<center>      <img src="img/air.svg" style="width:45%"alt="">
 <h4>Air scouting
 
 
@@ -1332,7 +1360,7 @@ As part of the services, we provide 24/7 customer support, with offices spread w
 </center>        </div>
 
 <div class="row">
-<center>  <img src="img/11 (3).png" style="width:45%"alt="">
+<center>  <img src="img/plant.svg" style="width:45%"alt="">
 <h4>Crop-specific management plans
 
 </h4>
@@ -1366,7 +1394,7 @@ As part of the services, we provide 24/7 customer support, with offices spread w
 
 <div class="container">
 
-    <a href="#TOP">     <div class="ribbon">
+    <a href="#top">     <div class="ribbon">
   BACK TO TOP      </div></a>
 </div>
 
