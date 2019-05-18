@@ -7,7 +7,7 @@
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
-.section-5 img:hover {
+/*body,*/ .section-5 img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -580,6 +580,10 @@ margin: 5px;
       border-color:#4CAF50 ;
 
 
+    }
+
+    .ecosystem-4{
+      width: 40%
     }
 /*----------------------MEDIA QUERIES------------------------*/
 /*---------------------MEDIA QUERIES----------------------------*/
@@ -1160,4 +1164,7 @@ padding-top:
   /*------------------------------------------------------*/
 
 
+      .ecosystem-4{
+        width: 100%
+      }
 }
