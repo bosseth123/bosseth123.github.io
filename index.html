@@ -98,6 +98,14 @@ width: 100%;
 .dropdown-content img{
   width: 10%
 }
+
+@media (max-width:500px) {
+  .dropdown-content img{
+    width: 50%
+  }
+
+}
+
 </style>
 </head>
 
@@ -713,13 +721,13 @@ $('.stop').on('click',function(){
 
 
 
-    <div id="0" class="dropdown-content fade ">
+    <div id="0" class="dropdown-content fade  ">
       <center>     <img src="img/trade.svg" alt=""> <span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span> </center>
-
     <center>  <h3>AgricTrade</h3>
         <p>  AgricTrade is an online marketplace connecting agri trade networks from farmers to buyers. It create a direct business tie-ups between farmers, transporters, cold storage providers, retailers, and even consumers.
       </p></center>
     </div>
+
 
 
 
@@ -750,6 +758,23 @@ AgricStorage is Agric’s network of cold storage facilities across Nigeria and 
       <p>
         AgricFinance is a micro-financing scheme for small farmers. It will make grassroots financing such as lending, crowdfarming available and enhance financial support to farmers. AgricFinance will also enable farm insurance and farmers pension.
   </p>  </div>
+
+
+
+  <div class="dropdown">
+     <img src="img/chain.svg" onclick="myFunction11()" class="dropbtn" alt="">
+</div>
+
+
+
+    <div id="11" class="dropdown-content fade ">
+      <center>     <img src="img/chain.svg" alt=""> <span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span> </center>
+
+    <center>  <h3>AgriChain</h3>
+        <p> AgriChain is a supply chain architecture that tracks and monitors crops right from the time they are harvested to the time they are received by retailers/consumers.
+ </p></center>
+    </div>
+
 
 
   <!--
@@ -876,7 +901,7 @@ AgricStorage is Agric’s network of cold storage facilities across Nigeria and 
 
 
                         <div id="9" class="dropdown-content fade">
-                          <center>     <img src="img/bitcoin.svg" alt="">     <span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span> x </center>
+                          <center>     <img src="img/bitcoin.svg" alt="">     <span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span></center>
 </center>
 
                           <center>  <h3>                                       Agricoin
@@ -898,18 +923,32 @@ AgricStorage is Agric’s network of cold storage facilities across Nigeria and 
     // document.getElementById("0").classList.toggle("show");
     // caleb's section
     var class_name_variable = document.getElementsByClassName("dropdown-content");
-    for(var i= 0; i <= 8;i++){
+    for(var i= 0; i <= 9;i++){
       class_name_variable[i].style.display = "none";
     }
     document.getElementById("0").style.display = "block";
     console.log("Function responding");
     // caleb's section ends
   }
+
+  function myFunction11() {
+    // document.getElementById("0").classList.toggle("show");
+    // caleb's section
+    var class_name_variable = document.getElementsByClassName("dropdown-content");
+    for(var i= 0; i <= 9;i++){
+      class_name_variable[i].style.display = "none";
+    }
+    document.getElementById("11").style.display = "block";
+    console.log("Function responding");
+    // caleb's section ends
+  }
+
+
   function myFunction1() {
     // document.getElementById("1").classList.toggle("show");
     // caleb's section
     var class_name_variable = document.getElementsByClassName("dropdown-content");
-    for(var i= 0; i <= 8;i++){
+    for(var i= 0; i <= 9;i++){
       class_name_variable[i].style.display = "none";
     }
     document.getElementById("1").style.display = "block";
@@ -920,7 +959,7 @@ AgricStorage is Agric’s network of cold storage facilities across Nigeria and 
     // document.getElementById("2").classList.toggle("show");
     // caleb's section
     var class_name_variable = document.getElementsByClassName("dropdown-content");
-    for(var i= 0; i <= 8;i++){
+    for(var i= 0; i <= 9;i++){
       class_name_variable[i].style.display = "none";
     }
     document.getElementById("2").style.display = "block";
@@ -931,7 +970,7 @@ AgricStorage is Agric’s network of cold storage facilities across Nigeria and 
   function myFunction3() {
     // document.getElementById("3").classList.toggle("show");// caleb's section
     var class_name_variable = document.getElementsByClassName("dropdown-content");
-    for(var i= 0; i <= 8;i++){
+    for(var i= 0; i <= 9;i++){
       class_name_variable[i].style.display = "none";
     }
     document.getElementById("3").style.display = "block";
@@ -942,7 +981,7 @@ AgricStorage is Agric’s network of cold storage facilities across Nigeria and 
     // document.getElementById("4").classList.toggle("show");
     // caleb's section
     var class_name_variable = document.getElementsByClassName("dropdown-content");
-    for(var i= 0; i <= 8;i++){
+    for(var i= 0; i <= 9;i++){
       class_name_variable[i].style.display = "none";
     }
     document.getElementById("4").style.display = "block";
@@ -953,7 +992,7 @@ AgricStorage is Agric’s network of cold storage facilities across Nigeria and 
     // document.getElementById("5").classList.toggle("show");
     // caleb's section
     var class_name_variable = document.getElementsByClassName("dropdown-content");
-    for(var i= 0; i <= 8;i++){
+    for(var i= 0; i <= 9;i++){
       class_name_variable[i].style.display = "none";
     }
     document.getElementById("5").style.display = "block";
@@ -964,7 +1003,7 @@ AgricStorage is Agric’s network of cold storage facilities across Nigeria and 
     // document.getElementById("6").classList.toggle("show");
     // caleb's section
     var class_name_variable = document.getElementsByClassName("dropdown-content");
-    for(var i= 0; i <= 8;i++){
+    for(var i= 0; i <= 9;i++){
       class_name_variable[i].style.display = "none";
     }
     document.getElementById("6").style.display = "block";
@@ -975,7 +1014,7 @@ AgricStorage is Agric’s network of cold storage facilities across Nigeria and 
     // document.getElementById("7").classList.toggle("show");
     // caleb's section
     var class_name_variable = document.getElementsByClassName("dropdown-content");
-    for(var i= 0; i <= 8;i++){
+    for(var i= 0; i <= 9;i++){
       class_name_variable[i].style.display = "none";
     }
     document.getElementById("7").style.display = "block";
@@ -987,7 +1026,7 @@ AgricStorage is Agric’s network of cold storage facilities across Nigeria and 
     // document.getElementById("7").classList.toggle("show");
     // caleb's section
     var class_name_variable = document.getElementsByClassName("dropdown-content");
-    for(var i= 0; i <= 8;i++){
+    for(var i= 0; i <= 9;i++){
       class_name_variable[i].style.display = "none";
     }
     document.getElementById("9").style.display = "block";
@@ -1001,7 +1040,7 @@ AgricStorage is Agric’s network of cold storage facilities across Nigeria and 
   // close the modal when the user cicks X;
   function global_hidden(){
     var class_name_variable = document.getElementsByClassName("dropdown-content");
-    for(var i= 0; i <= 8;i++){
+    for(var i= 0; i <= 9;i++){
       class_name_variable[i].style.display = "none";
     }
   }
