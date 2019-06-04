@@ -864,6 +864,13 @@ margin-bottom: 10%;
 
 @media(max-width:500px){
 
+
+  .section-10 .row{
+    width: auto;
+    float:none;
+  }
+
+
 .blue{
   width: 80%
 }
