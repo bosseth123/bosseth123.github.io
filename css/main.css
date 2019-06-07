@@ -952,9 +952,9 @@ margin-bottom: 10%;
     }
 @media(max-width:500px){
   .dropbtn {
-      width:12%;
+      width:15%;
       float: right;
-      margin: 10px 12px;
+      margin: 10px 5px;
       color: white;
       padding: 0px;
       border: none;
