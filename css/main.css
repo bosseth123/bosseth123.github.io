@@ -62,7 +62,6 @@
 .dropbtn {
   align-items: center;
   width: 19%;
-  float:right;
   margin: 20px 31px;
   color: white;
   padding: 16px;
@@ -70,9 +69,12 @@
   cursor: pointer;
 }
 
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover{
   background-color:#3B5323;
 }
+
+
+
 
 .dropdown {
   position: relative;
@@ -520,12 +522,22 @@ margin: 5px;
 
 .dropbtn {
     width: 7%;
-    float: right;
+    float: left;
     margin: 10px 12px;
     color: white;
     padding: 16px;
     border: none;
     cursor: pointer;
+}
+
+.dropbtn p{
+  font-size: 14px;
+  margin-top: 5px;
+  color:#666
+}
+
+.ecosys:hover{
+  color: white
 }
 /*---------------------ABOUT----------------------------*/
 /*-------------------ABOUT-----------------------------*/
@@ -952,14 +964,15 @@ margin-bottom: 10%;
     }
 @media(max-width:500px){
   .dropbtn {
-      width:15%;
+      width:20%;
       float: right;
       margin: 10px 5px;
       color: white;
       padding: 0px;
       border: none;
       cursor: pointer;
-      padding-bottom: 30px
+      padding-bottom: 30px;
+      height: auto;
 
   }
 }
