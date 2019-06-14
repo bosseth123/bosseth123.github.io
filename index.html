@@ -29,9 +29,17 @@
 <link rel="stylesheet" type="text/css" href="owl-carousel/owl.theme.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
+<script src="https://unpkg.com/scrollreveal"></script>
 
 
 <style>
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 body{
   font-family: 'Raleway', sans-serif;
@@ -264,11 +272,11 @@ width: 100%;
 
 <main style="z-index:-1; ">
 <span id="top"></span>
-  <section class="vid-bgr">
+  <section class="vid-bgr"  >
     <br><br><br><br>
     <span class="vid-bgr-content" style="width:100%">
 
-      <section class="section-1" style="width:100%" >
+      <section class="section-1" style="max-height:1000px"  >
       <div class="container">
         <br><br>
 
@@ -330,33 +338,6 @@ width: 100%;
 
 
 
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-              <script>
-              $(document).ready(function(){
-                // Add smooth scrolling to all links
-                $("a").on('click', function(event) {
-
-                  // Make sure this.hash has a value before overriding default behavior
-                  if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                      scrollTop: $(hash).offset().top
-                    }, 1500, function(){
-
-                      // Add hash (#) to URL when done scrolling (default click behavior)
-                      window.location.hash = hash;
-                    });
-                  } // End if
-                });
-              });
-              </script>
            <br>
 
 
@@ -794,7 +775,7 @@ $('.stop').on('click',function(){
 
 
             <div class="dropdown dropbtn">
-              <img src="img/bitcoin.svg" width="100%" onclick="myFunction9()" class="" alt="">
+              <img src="img/bitcoin.jpeg" width="100%" onclick="myFunction9()" class="" alt="">
               <div style="display:inline; width:100%; text-align:center; " class="">
              <p class="ecosys"  >Agricoin </p>
               </div>
@@ -906,7 +887,7 @@ $('.stop').on('click',function(){
 
 
           <div id="9" class="dropdown-content fade">
-            <center>     <img src="img/bitcoin.svg" alt="">     <span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span></center>
+            <center>     <img src="img/bitcoin.jpeg" alt="">     <span style="float:right; font-size:40px; color:#666" onclick="global_hidden()">&times;</span></center>
       </center>
 
             <center>  <h3>                                       Agricoin
@@ -1854,6 +1835,8 @@ The Agrichainx team is uniquely positioned to take on this challenge. Our team i
 </center>
 
 
+
+
 </div> <br>
 <div class="row"   style="height:350px;" >
 <center>  <img src="img/ceo.jpg" style="width:80%;border-radius:50%"alt="">
@@ -2130,7 +2113,7 @@ The Agrichainx team is uniquely positioned to take on this challenge. Our team i
 
 
 
-
+<br><br><br>
 
     <section class="section-5" style="background-color:#f5f3f5; color:#fff ">
     <div class="container">
@@ -2193,7 +2176,7 @@ The Agrichainx team is uniquely positioned to take on this challenge. Our team i
 
 
 
-
+<br><br><br>
 
 
         <section class="section-5" style="background-color:#fff; color:#fff; ">
@@ -2251,8 +2234,7 @@ The Agrichainx team is uniquely positioned to take on this challenge. Our team i
                 <div class="container">
                 <div class="container">
 
-                <center>    <h1 >Advisor</h1> <br>
-                </center>
+
 
                 </div>
                 </div> <br>
@@ -2317,7 +2299,7 @@ The Agrichainx team is uniquely positioned to take on this challenge. Our team i
 <section>
 
   <div class="container dont-display">
-aaaa
+
     <div class="owl-carousel owl-theme">
         <div class="item"><h4> <img src="img/partners.png" alt=""> </h4></div>
         <div class="item"><h4> <img src="img/partners.png" alt=""> </h4></div>
@@ -2567,14 +2549,14 @@ $('.owl-carousel').owlCarousel({
                                     <div class="container">
                                       <a  id="myBtn" href="#top"  style="
                                           position: fixed;
-                                          bottom: 20px;
+                                          bottom: 10px;
                                           right: 10px;
                                           z-index: 99;
                                           font-size: 12px;
                                           border: none;
                                           outline: none;
-                                          background-color: #3B5323;
-                                          color: white;
+                                          background-color: ;
+                                          color: #3B5323;
                                           cursor: pointer;
                                           padding: 5px;
                                           border-radius: 50%; padding-right:5px" ><i class="fa fa-chevron-circle-up fa-3x"></i></a>
@@ -2730,9 +2712,11 @@ ________________
 </div>
 
 </div>
+<script src="https://unpkg.com/scrollreveal"></script>
 
-
-
+<script type="text/javascript">
+  ScrollReveal().reveal('.row');
+</script>
 <!-- javascript javascript javascript javascript javascript javascript javascript javascript javascript javascript javascript -->
 <!-- javascript javascript javascript javascript javascript javascript javascript javascript javascript javascript javascript -->
 <!-- javascript javascript javascript javascript javascript javascript javascript javascript javascript javascript javascript -->
