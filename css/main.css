@@ -617,6 +617,13 @@ margin: 5px;
     .ecosystem-4{
       width: 40%
     }
+
+
+    .roadmap{
+      padding: 0%, 10%;
+    }
+
+
 /*----------------------MEDIA QUERIES------------------------*/
 /*---------------------MEDIA QUERIES----------------------------*/
 /*-------------------MEDIA QUERIES-----------------------------*/
@@ -889,6 +896,14 @@ margin-bottom: 10%;
 
 
 @media(max-width:500px){
+
+
+
+.roadmap{
+  width: 100%;
+}
+
+
 
 .section-1 .icn{
   font-size:2555px
