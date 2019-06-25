@@ -1,23 +1,37 @@
+.dont-display-1{
+  display: none;
+}
+
+
+
+
+
+
+
 .section-4 .button:hover{
   background-color:#3B5323
 }
 
 
+.section-10 .row{
+  width: 20%;
+  float:left;
+}
 
 .resource{
   height: 700px;
   padding: 130px 0px 0px 0px;
   max-width: 100%;
 }
-/*.section-3 img:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-/*body,*/ /* .section-5 img:hover {
+.shake img:hover {
   animation: shake 0.1s;
   animation-iteration-count: infinite;
 }
-*/
+/*body,*/ .shake img:hover {
+  animation: shake 0.1s;
+  animation-iteration-count: infinite;
+}
+
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -49,15 +63,10 @@
 }
 
 
-.dont-display-1{
-  display: none;
-}
-
 
 .dropbtn {
   align-items: center;
-  width: 19%;
-  float:right;
+  width: 20%;
   margin: 20px 31px;
   color: white;
   padding: 16px;
@@ -65,9 +74,16 @@
   cursor: pointer;
 }
 
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn p{
+  font-size: 14px;
+}
+
+.dropbtn:hover{
   background-color:#3B5323;
 }
+
+
+
 
 .dropdown {
   position: relative;
@@ -293,11 +309,11 @@ h2{
 }
 
 .logo:hover{
-  width: 60px;
+  width: 121px;
 }
 
 .logo{
-  width:60px;
+  width:110px;
 }
 
 header.conntainer{
@@ -349,7 +365,7 @@ header .highlight, header .current a{ color: #4CAF50;
   /*SECTION-1  SECTION-1  SECTION-1  SECTION-1  SECTION-1  SECTION-1  SECTION-1  SECTION-1  SECTION-1  SECTION-1  SECTION-1  SECTION-1 */
 
 .section-1 {
-min-height: 600px;
+min-height: auto;
 width: 100%;
 background: url("../img/benjamin-davies-260884-unsplash.jpg");
 
@@ -411,7 +427,7 @@ text-shadow: 0 0 15px rgba(0,0,0,0.5);
 .section-5 .row{
   width:20%;
   float: left;margin: 2%; padding: 10px; background-color: #fff; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-
+height: 450px
 }
 
 .section-2{
@@ -514,13 +530,23 @@ margin: 5px;
 }
 
 .dropbtn {
-    width: 7%;
-    float: right;
+    width: 7.5%;
+    float: left;
     margin: 10px 12px;
     color: white;
     padding: 16px;
     border: none;
     cursor: pointer;
+}
+
+.dropbtn p{
+  font-size: 12px;
+  margin-top: 5px;
+  color:#666
+}
+
+.ecosys:hover{
+  color: white
 }
 /*---------------------ABOUT----------------------------*/
 /*-------------------ABOUT-----------------------------*/
@@ -591,13 +617,20 @@ margin: 5px;
     .ecosystem-4{
       width: 40%
     }
+
+
+    .roadmap{
+      padding: 0%, 10%;
+    }
+
+
 /*----------------------MEDIA QUERIES------------------------*/
 /*---------------------MEDIA QUERIES----------------------------*/
 /*-------------------MEDIA QUERIES-----------------------------*/
 /*-------------------MEDIA QUERIES-----------------------------*/
 
 
-@media(max-width:1200px){
+@media(max-width:1300px){
 
 header ul, li{
   display: none;
@@ -793,9 +826,6 @@ nav{
   }
 
 
-li{
-  border-bottom: 1px solid #333;
-}
 
 
 
@@ -823,6 +853,14 @@ header .container{
     position: fixed;
     opacity: 10px;
   }
+
+
+
+
+
+.section-5 .row{
+  max-height: 1000px;
+}
 
 
 /*----------------------ABOUT------------------------*/
@@ -859,10 +897,26 @@ margin-bottom: 10%;
 
 @media(max-width:500px){
 
+
+
+.roadmap{
+  width: 100%;
+}
+
+
+
+.section-1 .icn{
+  font-size:2555px
+}
+  .section-10 .row{
+    width: auto;
+    float:none;
+  }
+
+
 .blue{
   width: 80%
 }
-
 
 
   .dont-display-1{
@@ -870,7 +924,7 @@ margin-bottom: 10%;
   }
 
   .resource{
-    height: 1000px;
+    height: 700px;
     padding: 100px 0px 0px 0px;
   }
 
@@ -942,13 +996,20 @@ margin-bottom: 10%;
     }
 @media(max-width:500px){
   .dropbtn {
-      width: 40%;
+      width:15%;
       float: right;
-      margin: 10px 12px;
+      margin: 10px 5px;
       color: white;
-      padding: 16px;
+      padding: 0px;
       border: none;
       cursor: pointer;
+      padding-bottom: 30px;
+      height: auto;
+
+  }
+
+  .dropbtn p{
+    font-size: 12px;
   }
 }
   .dropbtn:hover, .dropbtn:focus {
@@ -1086,7 +1147,7 @@ body {
 
 
   .logo{
-    width: 50px;
+    width: 100px;
   }
 
    .whatsapp{

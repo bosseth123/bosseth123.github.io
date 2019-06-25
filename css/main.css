@@ -309,11 +309,11 @@ h2{
 }
 
 .logo:hover{
-  width: 60px;
+  width: 121px;
 }
 
 .logo{
-  width:60px;
+  width:110px;
 }
 
 header.conntainer{
@@ -630,7 +630,7 @@ margin: 5px;
 /*-------------------MEDIA QUERIES-----------------------------*/
 
 
-@media(max-width:1200px){
+@media(max-width:1300px){
 
 header ul, li{
   display: none;
@@ -1147,7 +1147,7 @@ body {
 
 
   .logo{
-    width: 50px;
+    width: 100px;
   }
 
    .whatsapp{

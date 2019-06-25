@@ -527,40 +527,39 @@ Agricoin Supply
 
 
 
+                                        <div class="container">
+                                          <a  id="myBtn" href="#top"  style="
+                                              position: fixed;
+                                              bottom: 10px;
+                                              right: 10px;
+                                              z-index: 99;
+                                              font-size: 12px;
+                                              border: none;
+                                              outline: none;
+                                              background-color: ;
+                                              color: #3B5323;
+                                              cursor: pointer;
+                                              padding: 5px;
+                                              border-radius: 50%; padding-right:5px" ><i class="fa fa-chevron-circle-up fa-3x"></i></a>
 
-    <div class="container">
-      <a  id="myBtn" href="#toper"  style="
-          position: fixed;
-          bottom: 20px;
-          right: 20px;
-          z-index: 99;
-          font-size: 12px;
-          border: none;
-          outline: none;
-          background-color: #3B5323;
-          color: white;
-          cursor: pointer;
-          padding: 5px;
-          border-radius: 4px; padding-right:5px" ><i class="fa fa-chevron-circle-up fa-3x"></i></a>
+                                        </div>
 
-    </div>
+                                        <script>
+                                        // When the user scrolls down 20px from the top of the document, show the button
+                                        window.onscroll = function() {scrollFunction()};
 
-    <script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
+                                        function scrollFunction() {
+                                          if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                                            document.getElementById("myBtn").style.display = "block";
+                                          } else {
+                                            document.getElementById("myBtn").style.display = "none";
+                                          }
+                                        }
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        document.getElementById("myBtn").style.display = "block";
-      } else {
-        document.getElementById("myBtn").style.display = "none";
-      }
-    }
+                                        // When the user clicks on the button, scroll to the top of the document
 
-    // When the user clicks on the button, scroll to the top of the document
+                                        </script>
 
-    </script>
-    <br><br><br>
 
 
   </main>
