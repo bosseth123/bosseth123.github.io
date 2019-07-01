@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width">
 <link rel="shortcut icon" href="Bokehlicia-Captiva-Web-soundcloud.ico" type="image/x-icon">
 
-<title>agrichaincoin.com | welcome</title>
+<title>Agrichaincoin.com | Invest In Equity</title>
 <link rel="stylesheet" href="css/w3c.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -47,136 +47,145 @@ body{
 }
 
 
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
 
-/* container-1 around content */
-.container-1 {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.container-1::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container-1 to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container-1 to the right */
-.right {
-  left: 50%;
-}
-
-/* Add arrows to the left container-1 (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container-1 (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for container-1s on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-  left: 31px;
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  /* Container around content */
+  .container-1 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+
+  /* The circles on the timeline */
+  .container-1::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+
+  /* The actual content */
   .content {
-    padding: 20px 10px;
+    padding: 20px 30px;
     background-color: white;
     position: relative;
     border-radius: 6px;
   }
-  /* Full-width container-1s */
-  .container-1 {
-  width: 100%;
-  padding-left: 0px;
-  padding-right: 5px;
+
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+
+    /* Full-width containers */
+    .container-1 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container-1::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
   }
 
-  /* Make sure that all arrows are pointing leftwards */
-  .container-1::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-  }
 
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-  left: 15px;
-  }
 
-  /* Make all right containers behave like the left ones */
-  .right {
-  left: 0%;
-  }
-}
+
+
+
+
+
+
+
+
+
+
 </style>
 </head>
 
@@ -391,7 +400,7 @@ Accepted Currencies    ETH, BTC, NGN      </div>
 
         </div>
 
-       <br><br><br><br>
+       <br><br>
         <div class="section-2 container">
           <p>agrichainx, the subsidiary of Global Blockchain Innovative Technologies Limited, is developing four flagship products/services:</p>
         </div>
@@ -404,7 +413,7 @@ Accepted Currencies    ETH, BTC, NGN      </div>
 
 
        <section class="section-5 " style="background-color: #f5f3f5;">
-       <br><br>
+
  <div class="container">
 
 
@@ -413,7 +422,7 @@ Accepted Currencies    ETH, BTC, NGN      </div>
         <h1 > Our Approach</h1> <br>
 
        </center>
-       <br><br>
+
      <div class="row">
        <center>    <img src="img/trade.svg" style="width:45%"alt="">
        <h4>AgricTrade</h4>
@@ -467,7 +476,7 @@ An online marketplace connecting agri trade networks from farmers to buyers.    
 <div class="" style="background-color:#f5f3f5">
 
 <div class="section-2 container" style="background-color:#f5f3f5">
-<br><br><br><br>
+<br> <br>
         <p> Agrichainx combines digital trading, contracting, self-executing smart contracts, financing and embedded payment options in fiat and cryptocurrency, escrow service, and new food supply chain tracking and traceability powered by blockchain technology. </p>
       <p>  Designed to boost agric business processes, food security and supply chain efficiency, Agrichainx changes the way farmer, consumers, restaurants, super markets, companies do business, rendering traditional business models obsolete.  </p>
       <span  id="1" ></span>
@@ -478,79 +487,94 @@ An online marketplace connecting agri trade networks from farmers to buyers.    
 
 
 
-<section class="section-4"  style="background-color:#green">
-<div class="container">
-
-<br><br>
-
-<span  id="1" ></span>
-
-<div class="timeline"  style="background-color:#green">
-  <div class="container-1 left">
-    <div class="content">
-
-          <center>
-
-            <h3>Value Proposition</h3>
-
-      <p>Agrichainx is an all-in-one solution for agricultural commodities contracting, financing, payments, agric business processes, food security and supply chain efficiency. </p>
-
-      <p>Agrichainx combines the functions of farmers, middlemen, brokers, intermediaries, banks, escrow agents, and arbitral institutions. </p>
-
-      <p>  Agrichainx – a simple solution for complex processes.
-      </p>
-
-          </center></div>
-
-  </div>
-  <span  id="2" ></span>
-  <p></p> <p></p>
-  <div class="container-1 right">
-    <div class="content">
-
-          <center>
-
-            <h3>Use of Funds</h3>
-          <p>
-      At this stage, we are raising funds to develop and release working versions of our core products: agricmart, agricfinance, agrichub, agrichain, agricdata and agricoin. </p>
-
-      <p>See roadmap for detailed information on the product development milestones planned after completion of fundraising event.</p>
-
-      <p>To date, Agrichainx has been focused on streamlining the company’s processes, on the development of the core products and the ecosystem, and on creating value to its community.
-      </p>
-
-          </center>
-</div>
-  </div>
-  <span  id="3" ></span>
-  <p></p> <p></p>
-  <div class="container-1 left">
-    <div class="content">
-      <center>
-
-        <h3>Development Strategy and Current Status</h3>
-      <p>
-  <p>Our strategic planning process involves a “bottom-up approach” – from unique products with immediate, practical application to a comprehensive blockchain ecosystem.
-  </p>
-  <p>  stage 1
-  Development of innovative products and the core elements of the ecosystem.</p>
-  <p>    stage 2
-  Product implementation and integration – practical use and adoption of the blockchain ecosystem.</p>
-
-<p>  We are currently in Stage 1 – prototypes and demo-versions of the flagship products have been developed within the framework of the ecosystem development. The next step is the development of the working products. See roadmap for more detailed information.
-  </p>
-
-      </center></div><br><br><br>
-  </div>
-
-</div>
+<div class="roadmap"  style="background-color:#4CAF50" >
+  <br><br>
 
 
 
-</div>
 
 
-</section >
+
+
+  <div class="timeline"   >
+
+
+
+
+
+
+
+
+
+        <div class="container-1 right">
+          <div class="content">
+            <center>
+
+              <h3>Development Strategy and Current Status</h3>
+            <p>
+        <p>Our strategic planning process involves a “bottom-up approach” – from unique products with immediate, practical application to a comprehensive blockchain ecosystem.
+        </p>
+        <p>  stage 1
+        Development of innovative products and the core elements of the ecosystem.</p>
+        <p>    stage 2
+        Product implementation and integration – practical use and adoption of the blockchain ecosystem.</p>
+
+      <p>  We are currently in Stage 1 – prototypes and demo-versions of the flagship products have been developed within the framework of the ecosystem development. The next step is the development of the working products. See roadmap for more detailed information.
+        </p>
+
+            </center></div>
+        </div>
+
+
+            <div class="container-1 left">
+              <div class="content">
+
+                    <center>
+
+                      <h3>Use of Funds</h3>
+                    <p>
+                At this stage, we are raising funds to develop and release working versions of our core products: agricmart, agricfinance, agrichub, agrichain, agricdata and agricoin. </p>
+
+                <p>See roadmap for detailed information on the product development milestones planned after completion of fundraising event.</p>
+
+                <p>To date, Agrichainx has been focused on streamlining the company’s processes, on the development of the core products and the ecosystem, and on creating value to its community.
+                </p>
+
+                    </center>
+          </div>
+            </div>
+            <div class="container-1 right">
+              <div class="content">
+
+                    <center>
+
+                      <h3>Value Proposition</h3>
+
+                <p>Agrichainx is an all-in-one solution for agricultural commodities contracting, financing, payments, agric business processes, food security and supply chain efficiency. </p>
+
+                <p>Agrichainx combines the functions of farmers, middlemen, brokers, intermediaries, banks, escrow agents, and arbitral institutions. </p>
+
+                <p>  Agrichainx – a simple solution for complex processes.
+                </p>
+
+                    </center></div>
+            </div>
+
+
+
+
+
+
+
+  </div> <br><br> </div>
+
+
+
+
+
+
+
+
 
 
     </section >
@@ -595,7 +619,7 @@ An online marketplace connecting agri trade networks from farmers to buyers.    
         </div>
 
 
-        <br><br>
+
         </section>
 
 
@@ -605,7 +629,7 @@ An online marketplace connecting agri trade networks from farmers to buyers.    
 
 
         <section class="section-4" style="background-color:#f5f3f5;">
-        <br><br>
+
 
         <div class="container">
 
@@ -627,15 +651,15 @@ An online marketplace connecting agri trade networks from farmers to buyers.    
         </div>
 
 
-        <br><br>
+
         </section>
         <span  id="6" ></span>
-        <p></p>
+
 
             <section class="section-4"  style="background-color:#fff">
             <div class="container">
 
-          <br><br>
+
             <div class="row aaa"   style="background-color:#fff">
 
           <center>
@@ -751,7 +775,7 @@ An online marketplace connecting agri trade networks from farmers to buyers.    
 <p></p>
 
             <section class="section-2" style="background-color:#fff">
-              <br> <br><br><br>
+              <br>
 
             <div class="">
               <center><h1>                Crowdfunding Campaign Structure
@@ -830,115 +854,112 @@ An online marketplace connecting agri trade networks from farmers to buyers.    
   }
 
 </script>
+<div class="footer" style="    background-color: #3B5323; height:auto; width:100%; color:white;">
 
+<div class="container">
+<div class="" >
 
-  <div class="footer" style="    background-color: #3B5323; height:auto; width:100%; color:white;">
 
-  <div class="container">
-  <div class="" >
+</div>
 
+<br>
 
-  </div>
+<div class="side">
 
-  <br>
 
-  <div class="side">
+<center>
 
+<p>  Suit 66, <br> De Avalon Plaza, <br> Utako Road Wuse Berger, <br> Abuja.</p>
 
-  <center>
+</div>
+<div class="side">
 
-  <p>  Suit 66 De Avalon Utako Road Wuse Berger, Abuja</p>
 
-  </div>
-  <div class="side">
+<nav style=" width:auto; color:#999">
 
 
-  <nav style=" width:auto; color:#999">
+<center>
+________________
+</center>
 
 
-  <center>
-  ________________
-  </center>
 
+</nav>
 
+</div>
 
-  </nav>
+<div class="side">
+<center>
 
-  </div>
+<p>Appreciation. Thanks For Supporting.</p>
 
-  <div class="side">
-  <center>
+</center>
 
-  <p>Appreciation. Thanks For Supporting.</p>
 
-  </center>
+</div>
+<!--  <div class="side">
+<center><button style="color: #ffffff; margin: 10px; padding: 0px 30px 0px 10px;"class=" btn button" type="button" name="button"><span class="text"  style="color:#ffffff"> <a href="pricing.html"> Pricing </a> </span></button></center>
 
+<center><button style="color: #ffffff; margin: 10px; padding: 0px 30px 0px 10px;"class=" btn button" type="button" name="button"><span class="text"  style="color:#ffffff" > <a href="about.html"> About Us </a> </span></button></center>
 
-  </div>
-  <!--  <div class="side">
-  <center><button style="color: #ffffff; margin: 10px; padding: 0px 30px 0px 10px;"class=" btn button" type="button" name="button"><span class="text"  style="color:#ffffff"> <a href="pricing.html"> Pricing </a> </span></button></center>
+<center><button style="color: #ffffff; margin: 10px; padding: 0px 30px 0px 10px;"class=" btn button" type="button" name="button"><span class="text"  style="color:#ffffff"> <a href="login.html"> Contact Us </a> </span></button></center>
 
-  <center><button style="color: #ffffff; margin: 10px; padding: 0px 30px 0px 10px;"class=" btn button" type="button" name="button"><span class="text"  style="color:#ffffff" > <a href="about.html"> About Us </a> </span></button></center>
 
-  <center><button style="color: #ffffff; margin: 10px; padding: 0px 30px 0px 10px;"class=" btn button" type="button" name="button"><span class="text"  style="color:#ffffff"> <a href="login.html"> Contact Us </a> </span></button></center>
+</div>-->
 
+<div class="side">
 
-  </div>-->
+<center>
 
-  <div class="side">
 
-  <center>
 
 
+<p>  Get In Touch</p>
 
 
-  <p>  Get In Touch</p>
 
 
 
 
+<a href="  https://web.facebook.com/agrichaincoin/"><i class="fab fa-facebook-f"></i></a>
+<a href="  https://twitter.com/agrichaincoin"> <i class="fab fa-twitter"></i></a>
 
+<a href="https://www.instagram.com/agrichaincoin/"><i class="fab fa-instagram"></i></a>
+<a href=" https://www.linkedin.com/company/agrichaincoins/"> <i class="fab fa-linkedin-in"></i></a>
 
-  <a href="  https://web.facebook.com/agrichaincoin/"><i class="fab fa-facebook-f"></i></a>
-  <a href="  https://twitter.com/agrichaincoin"> <i class="fab fa-twitter"></i></a>
+<a href="https://t.me/joinchat/ERFdJkzw5JT7I9nFGoP8yw"><i class="fab fa-telegram-plane"></i></a>
+<a href="https://www.reddit.com/r/agrichaincoin"> <i class="fab fa-reddit-alien"></i></a>
 
-  <a href="https://www.instagram.com/agrichaincoin/"><i class="fab fa-instagram"></i></a>
-  <a href=" https://www.linkedin.com/company/agrichaincoins/"> <i class="fab fa-linkedin-in"></i></a>
 
-  <a href="https://t.me/joinchat/ERFdJkzw5JT7I9nFGoP8yw"><i class="fab fa-telegram-plane"></i></a>
-  <a href="https://www.reddit.com/r/agrichaincoin"> <i class="fab fa-reddit-alien"></i></a>
 
 
+</center>
 
 
-  </center>
+</div>
 
+<div class="side">
 
-  </div>
+<center>
 
-  <div class="side">
 
-  <center>
-  <p>  Made With Love</p> <i class="far fa-heart" style="  font-size: 1.5rem;"></i>
+<p> © 2019 All Rights Reserved | Made in NIG  </p>
 
-  <p> © 2019 All Rights Reserved | Made in NIG  </p>
 
 
 
 
+</center>
 
-  </center>
 
+</div>
 
-  </div>
 
 
 
+</div>
 
-  </div>
-
-  </div>
-
+</div>
   <script src="https://unpkg.com/scrollreveal"></script>
 
   <script type="text/javascript">

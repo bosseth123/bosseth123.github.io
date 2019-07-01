@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width">
 <link rel="shortcut icon" href="Bokehlicia-Captiva-Web-soundcloud.ico" type="image/x-icon">
 
-<title>agrichaincoin.com | welcome</title>
+<title>Agrichaincoin.com | Token Sale</title>
 <link rel="stylesheet" href="css/w3c.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -49,6 +49,138 @@ $(document).ready(function(){
     body{
       font-family: 'Raleway', sans-serif;
     }
+
+
+
+
+
+      /* The actual timeline (the vertical ruler) */
+      .timeline {
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      /* The actual timeline (the vertical ruler) */
+      .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+      }
+
+      /* Container around content */
+      .container-1 {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+      }
+
+      /* The circles on the timeline */
+      .container-1::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: white;
+        border: 4px solid #FF9F55;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      /* Place the container to the left */
+      .left {
+        left: 0;
+      }
+
+      /* Place the container to the right */
+      .right {
+        left: 50%;
+      }
+
+      /* Add arrows to the left container (pointing right) */
+      .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid white;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent white;
+      }
+
+      /* Add arrows to the right container (pointing left) */
+      .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+
+      /* Fix the circle for containers on the right side */
+      .right::after {
+        left: -16px;
+      }
+
+      /* The actual content */
+      .content {
+        padding: 20px 30px;
+        background-color: white;
+        position: relative;
+        border-radius: 6px;
+      }
+
+      /* Media queries - Responsive timeline on screens less than 600px wide */
+      @media screen and (max-width: 600px) {
+        /* Place the timelime to the left */
+        .timeline::after {
+        left: 31px;
+        }
+
+        /* Full-width containers */
+        .container-1 {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        }
+
+        /* Make sure that all arrows are pointing leftwards */
+        .container-1::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+        }
+
+        /* Make sure all circles are at the same spot */
+        .left::after, .right::after {
+        left: 15px;
+        }
+
+        /* Make all right containers behave like the left ones */
+        .right {
+        left: 0%;
+        }
+      }
+
+
+
 
 
     </style>
@@ -270,10 +402,10 @@ Agricoin Supply
 <div class="containers">
 
   <section class="section-2" style="background-color:#fff">
-    <br> <br><br><br>
+    <br> <br>
   <div class="container">
     <center><h1>     Agricoin Demand
-    </h1></center><br>
+    </h1></center>
     <p> <center>     Agricoin tokens are required to access, carryout transactions and activate Smart Contracts on agrichainx ecosystem.
 </center>
     </p>
@@ -321,9 +453,8 @@ Agricoin Supply
 
 </div>
 
-<center>    <button class="button"type="button" name="Learn More" >Register to Wishlist</button> </center> <br><br><br>
 
-<br><br>
+
 </section>
 
 
@@ -430,100 +561,225 @@ Agricoin Supply
 
     </div>
 
-    <center>    <button class="button"type="button" name="Learn More" >Register to Wishlist</button> </center> <br><br><br>
+  <span id="roadmap"></span>
 
-    <br><br>
+
+    <div class="roadmap"  style="background-color:#4CAF50" >
+
+
+
+
+      <div class="container"  style="color:  #fff" >
+        <br><br>
+
+        <br><br><br>
+      <h1 style="color:  #fff">Roadmap</h1>
+    <p style="color:  #fff"> Introduction</p>
+    <h3 style="color:  #fff">Roadmap and Equity Fundraising Stages </h3>
+    <p style="color:  #fff">Please note that the roadmap assumes successful fundraising stage 1 and stage 2 where the max cap is achieved. If the fundraising campaign achieves a different result timeline may be shifted. All the future functionalities are considered actual in the current technological and legal environments.</p>
+    <p style="color:  #fff">By the time a certain milestone is reached, some options that are presently planned to follow it may become obsolete or other requirements may arise. Future development plans may have to be adjusted depending on amount of funds raised and the changes in the legal environment, technological environment, and business or other requirements.</p>
+
+      </div>
+
+<br><br>
+
+      <div class="timeline"   >
+
+
+
+
+
+      <div class="container-1 left">
+        <div class="content">
+
+
+          <h3>Q4: 2018</h3>
+
+          <p>Idea Conceptualized</p>
+          <p>Research and Development</p>
+          <p>Consultation</p>
+          <br>
+        </div>
+      </div>
+
+      <div class="container-1 right">
+        <div class="content">
+          <h2>2016</h2>
+          <p>
+          <h3>Q1: 2019
+          </h3>  <p>Team Assemble</p>
+          <p>Whitepaper Development</p>
+          <p>Awareness Creation and consultation</p>
+          <p>Preparation for Stake Offering</p>
+          <br>
+
+        </div>
+      </div>
+
+
+      <div class="container-1 left">
+        <div class="content">
+          <h2>2015</h2>
+
+          <h3>Q2: 2019</h3>
+          <p>Community Building</p>
+          <p>Agrichainx Website Launched</p>
+          <p>Initial Stake Offering Pre-Launch</p><br>
+
+
+          </div>
+        </div>
+
+      <div class="container-1 right">
+        <div class="content">
+          <h2>2012</h2>
+          <h3>Q3: 2019
+          </h3>
+          <p>Agrichainx version 2.0 launched</p>
+          <p>Initial Stake Offering Begins</p>
+          <p>Marketing and Promotion</p>
+          <p>Private and Presale Begins</p>
+
+            </div>
+      </div>
+
+      <div class="container-1 left">
+        <div class="content">
+          <h2>2011</h2>
+
+          <h3>Q4: 2019
+          </h3>
+          <p>Main Sale Begins </p>
+          <p>Launch of Agrichainx ERC20 P2P smart contracts</p>
+          <p>Agrictrade Beta Testing</p>
+
+
+
+        </div>
+      </div>
+
+      <div class="container-1 right">
+        <div class="content">
+          <h2>2007</h2>
+          <h3>Q1: 2020
+          </h3>
+          <p>Initial Exchange Offering</p>
+          <p>Exchange Listing</p>
+    <p>Launch of Agrictrade</p>
+    <p>Launch of AgricNet</p>
+         </div>
+      </div>
+
+
+
+
+      <div class="container-1 left">
+        <div class="content">
+          <h3>Q2: 2020</h3>
+
+        <p>  AGNwallet Prototype</p>
+      <p>    Launch of Agricfinance</p>
+        <p>  Agrichub and Local Agent Center Launched</p>
+
+           <br>
+         </div>
+      </div>
+
+
+
+
+
+        <div class="container-1 right">
+          <div class="content">
+            <h3>Q3: 2020
+            </h3>
+            <p>Smart Agric Farming functionality Beta Testing.</p>
+            <p>AgricCard-Touch and Pay Mobile Solution</p>
+            <p>AgricPay</p>
+
+            <br>
+           </div>
+        </div>
+
+
+
+        <div class="container-1 left">
+          <div class="content">
+
+            <h3>Q4: 2020
+            </h3>
+            <p>Agrichain Pre-Launch</p>
+            <p>Farmers Pension launched</p>
+            <p>IOT Sensor and Monitoring Satellite Deployment.</p><br>
+           </div>
+        </div>
+
+
+            <div class="container-1 right">
+              <div class="content">
+
+
+                  <h3>Q1: 2021
+                  </h3>
+                  <p>Agricdata full implementation</p>
+
+                  <p>Drones acquired for farming and tracking functionality.</p>
+
+                  <p>Development, launch, and trials of AI and data capturing system prototype.</p><br>
+
+
+               </div>
+            </div>
+
+
+                <div class="container-1 left">
+                  <div class="content">
+
+
+
+
+                          <h3>Q2: 2021
+                          </h3>
+
+
+                          <p>Deployment of POC Sensors and initial Data Baseline creation.</p>
+                          <p>Initial data gathering, data scientists start creating control-guide structures. AgricStorage</p>
+                          <br>
+
+
+                   </div>
+                </div>
+                <div class="container-1 right">
+                  <div class="content">
+
+
+
+                        <h3>Q3: 2021</h3>
+                        <p>Expansion to new markets and global sales.</p> <br><br>
+
+
+                   </div>
+                </div>
+
+
+
+
+<br><br>
+
+
+      </div> <br><br> </div>
+
+
+
+
+
+
+
+
     </section>
-    <span id="roadmap"></span>
-
-    <div class="container pad" >
-
-  <div class="">
-
-    <br><br><br>
-  <h1>Roadmap</h1>
-<p> Introduction</p>
-<h3>Roadmap and Equity Fundraising Stages </h3>
-<p>Please note that the roadmap assumes successful fundraising stage 1 and stage 2 where the max cap is achieved. If the fundraising campaign achieves a different result timeline may be shifted. All the future functionalities are considered actual in the current technological and legal environments.</p>
-<p>By the time a certain milestone is reached, some options that are presently planned to follow it may become obsolete or other requirements may arise. Future development plans may have to be adjusted depending on amount of funds raised and the changes in the legal environment, technological environment, and business or other requirements.</p>
-
-  </div>
-<br><br><br>
-    <h1 style="color:  #3B5323">Roadmap</h1>
-
-    <h3>Q4: 2018</h3>
-
-    <p>Idea Conceptualized</p>
-    <p>Proving the concept can work</p>
-    <p>Research and Development</p>
-    <p>Strategic Plan</p>
-    <br>
-
-    <h3>Q1: 2019
-    </h3>  <p>Team Assemble</p>
-    <p>Whitepaper Development</p>
-    <p>Awareness Creation and consultation</p>
-    <p>Preparation for Stake Offering</p>
-    <br>
-
-    <h3>Q2: 2019</h3>
-    <p>Agrichainx Website Launched</p>
-    <p>Marketing and Initial Stake Offering Begins</p>
-    <p>Private and Presale Begins</p><br>
-
-    <h3>Q3: 2019
-    </h3>
-    <p>Main Sale Begins</p>
-    <p>Launch of Agrichainx ERC20 P2P smart contracts</p>
-    <p>Internal Exchange Development</p>
-
-    <br>
-
-    <h3>Q4: 2019
-    </h3>
-    <p>Partnership with major stakeholders.</p>
-    <p>Alliance with agricultural products processing companies.</p>
-    <p>Exchange Listing</p>
-
-    <br>
-
-    <h3>Q1: 2020
-    </h3>
-    <p>Launch of Agrichainx Marketplace</p>
-    <p>Agrichainx Center Platform development and beta testing begins</p> <br>
-    <h3>Q2: 2020
-    </h3>
-    <p>AGNwallet</p>
-    <p>Launched of Agricfinance</p>
-    <p>Local Agent Center Launched</p>
-    <br>
-
-    <h3>Q3: 2020
-    </h3>
-    <p>Smart Agric Farming functionality Beta Testing.</p>
-    <p>AgricCard-Touch and Pay Mobile Solution</p>
-    <p>AgricPay</p><br>
-    <h3>Q4: 2020
-    </h3>
-
-    <p>Farmers Pension launched</p>
-    <p>Launch of Agrichainx mobile app on Google and Apple stores.</p>
-    <p>IOT Sensor and Monitoring Satellite Deployment.</p><br>
-    <h3>Q1: 2021
-    </h3>
-    <p>Drones acquired for farming and tracking functionality.</p>
-    <p>Development, launch, and trials of AI and data capturing system prototype.</p><br>
-    <h3>Q2: 2021
-    </h3>
 
 
-    <p>Deployment of POC Sensors and initial Data Baseline creation.</p>
-    <p>Initial data gathering, data scientists start creating control-guide structures. AgricStorage</p>
-    <br>
 
-    <h3>Q3: 2021</h3>
-    <p>Expansion to new markets and global sales.</p> <br><br> </center>
-    </div>
 
 
 
@@ -587,114 +843,112 @@ Agricoin Supply
 
 
 
+<div class="footer" style="    background-color: #3B5323; height:auto; width:100%; color:white;">
+
+<div class="container">
+<div class="" >
 
 
-  <div class="footer" style="    background-color: #3B5323; height:auto; width:100%; color:white;">
+</div>
 
-  <div class="container">
-  <div class="" >
+<br>
 
-
-  </div>
-
-  <br>
-
-  <div class="side">
+<div class="side">
 
 
-  <center>
+<center>
 
-  <p>  Suit 66 De Avalon Utako Road Wuse Berger, Abuja</p>
+<p>  Suit 66, <br> De Avalon Plaza, <br> Utako Road Wuse Berger, <br> Abuja.</p>
 
-  </div>
-  <div class="side">
-
-
-  <nav style=" width:auto; color:#999">
+</div>
+<div class="side">
 
 
-  <center>
-  ________________
-  </center>
+<nav style=" width:auto; color:#999">
+
+
+<center>
+________________
+</center>
 
 
 
-  </nav>
+</nav>
 
-  </div>
+</div>
 
-  <div class="side">
-  <center>
+<div class="side">
+<center>
 
-  <p>Appreciation. Thanks For Supporting.</p>
+<p>Appreciation. Thanks For Supporting.</p>
 
-  </center>
-
-
-  </div>
-  <!--  <div class="side">
-  <center><button style="color: #ffffff; margin: 10px; padding: 0px 30px 0px 10px;"class=" btn button" type="button" name="button"><span class="text"  style="color:#ffffff"> <a href="pricing.html"> Pricing </a> </span></button></center>
-
-  <center><button style="color: #ffffff; margin: 10px; padding: 0px 30px 0px 10px;"class=" btn button" type="button" name="button"><span class="text"  style="color:#ffffff" > <a href="about.html"> About Us </a> </span></button></center>
-
-  <center><button style="color: #ffffff; margin: 10px; padding: 0px 30px 0px 10px;"class=" btn button" type="button" name="button"><span class="text"  style="color:#ffffff"> <a href="login.html"> Contact Us </a> </span></button></center>
+</center>
 
 
-  </div>-->
+</div>
+<!--  <div class="side">
+<center><button style="color: #ffffff; margin: 10px; padding: 0px 30px 0px 10px;"class=" btn button" type="button" name="button"><span class="text"  style="color:#ffffff"> <a href="pricing.html"> Pricing </a> </span></button></center>
 
-  <div class="side">
+<center><button style="color: #ffffff; margin: 10px; padding: 0px 30px 0px 10px;"class=" btn button" type="button" name="button"><span class="text"  style="color:#ffffff" > <a href="about.html"> About Us </a> </span></button></center>
 
-  <center>
+<center><button style="color: #ffffff; margin: 10px; padding: 0px 30px 0px 10px;"class=" btn button" type="button" name="button"><span class="text"  style="color:#ffffff"> <a href="login.html"> Contact Us </a> </span></button></center>
+
+
+</div>-->
+
+<div class="side">
+
+<center>
 
 
 
 
-  <p>  Get In Touch</p>
+<p>  Get In Touch</p>
 
 
 
 
 
 
-  <a href="  https://web.facebook.com/agrichaincoin/"><i class="fab fa-facebook-f"></i></a>
-  <a href="  https://twitter.com/agrichaincoin"> <i class="fab fa-twitter"></i></a>
+<a href="  https://web.facebook.com/agrichaincoin/"><i class="fab fa-facebook-f"></i></a>
+<a href="  https://twitter.com/agrichaincoin"> <i class="fab fa-twitter"></i></a>
 
-  <a href="https://www.instagram.com/agrichaincoin/"><i class="fab fa-instagram"></i></a>
-  <a href=" https://www.linkedin.com/company/agrichaincoins/"> <i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.instagram.com/agrichaincoin/"><i class="fab fa-instagram"></i></a>
+<a href=" https://www.linkedin.com/company/agrichaincoins/"> <i class="fab fa-linkedin-in"></i></a>
 
-  <a href="https://t.me/joinchat/ERFdJkzw5JT7I9nFGoP8yw"><i class="fab fa-telegram-plane"></i></a>
-  <a href="https://www.reddit.com/r/agrichaincoin"> <i class="fab fa-reddit-alien"></i></a>
-
-
-
-
-  </center>
-
-
-  </div>
-
-  <div class="side">
-
-  <center>
-  <p>  Made With Love</p> <i class="far fa-heart" style="  font-size: 1.5rem;"></i>
-
-  <p> © 2019 All Rights Reserved | Made in NIG  </p>
+<a href="https://t.me/joinchat/ERFdJkzw5JT7I9nFGoP8yw"><i class="fab fa-telegram-plane"></i></a>
+<a href="https://www.reddit.com/r/agrichaincoin"> <i class="fab fa-reddit-alien"></i></a>
 
 
 
 
-
-  </center>
-
-
-  </div>
+</center>
 
 
+</div>
+
+<div class="side">
+
+<center>
 
 
-  </div>
+<p> © 2019 All Rights Reserved | Made in NIG  </p>
 
-  </div>
+
+
+
+
+</center>
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
   <script src="https://unpkg.com/scrollreveal"></script>
 
   <script type="text/javascript">
